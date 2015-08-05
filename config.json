@@ -1,0 +1,8 @@
+{
+	"host": "192.168.193.145",
+	"user": "www",
+	"password": "www",
+	"baseDir": "",
+	"jsDir": "lib",
+	"projectPath": "jdf/"
+}
