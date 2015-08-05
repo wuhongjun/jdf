@@ -1,0 +1,18 @@
+<h3>css sprite test</h3>
+</br>
+
+<div class="csssprite clearfix">
+	<ul>
+		<li class="abtest_huafei" data-iframe="http://chongzhi.jd.com/index-newEntry.htm"><a target="_blank" href="http://chongzhi.jd.com/"><s></s>话费<i></i></a></li>
+		<li class="abtest_lvxing" data-iframe="http://trip.jd.com/html/newTravel.html"><a target="_blank" href="http://trip.jd.com/"><s></s>旅行<i></i></a></li>
+		<li class="abtest_caipiao" data-iframe="http://caipiao.jd.com/caipiao-jd.htm"><a target="_blank" href="http://caipiao.jd.com/"><s></s>彩票<i></i></a></li>
+		<li class="abtest_youxi" data-iframe="http://card.jd.com/html/card-jdIndex.html"><a target="_blank" href="http://game.jd.com/"><s></s>游戏<i></i></a></li>
+	</ul>
+
+	<ul>
+		<li class="abtest_jipiao"><a target="_blank" href="http://jipiao.jd.com/"><s></s>机票</a></li>
+		<li class="abtest_dianyingpiao"><a target="_blank" href="http://movie.jd.com/"><s></s>电影票</a></li>
+		<li class="abtest_yanchupiao"><a target="_blank" href="http://jr.jd.com/"><s></s>小金库</a></li>
+		<li class="abtest_shuidianmei"><a target="_blank" href="http://jiaofei.jd.com/"><s></s>水电煤</a></li>
+	</ul>
+</div>

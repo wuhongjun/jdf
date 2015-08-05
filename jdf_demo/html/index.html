@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>jdf_item demo</title>
+<link rel="stylesheet" type="text/css" href="http://misc.360buyimg.com/lib/skin/2013/base.css" media="all" />
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<script type="text/javascript" src="../js/index.js"></script>
+
+</head>
+<body>
+
+{%widgetOutputName="widget-index"%}
+
+{%widget name="header"%}
+
+<!-- main -->
+<div class="w">
+	<div class="content">
+		<br />
+		
+		{%widget name="intro"%}
+		<br>
+		<h1>jdf demo v3</h1>
+		
+		<br>
+		{%widget name="slideAnimate"%}
+		<br/>
+		{%widget name="accordion" data='{"name": "", "width":"242", "height":"241", "num": "10"}'%}
+		<br>
+		{%widget name="csssprite"%}
+	</div>
+</div>
+<!-- /main -->
+
+
+{%widget name="footer"%}
+
+</body>
+</html>

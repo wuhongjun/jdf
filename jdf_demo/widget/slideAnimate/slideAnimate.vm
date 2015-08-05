@@ -1,0 +1,70 @@
+<div class="ui-switchable-wrap" id="animate">
+	<div class="ui-switchable">
+		<div class="ui-switchable-nav-wrap">
+			<ul class="ui-switchable-nav clearfix">
+				<li class="ui-switchable-item"></li>
+				<li class="ui-switchable-item"></li>
+				<li class="ui-switchable-item"></li>
+				<li class="ui-switchable-item"></li>
+				<li class="ui-switchable-item"></li>
+			</ul>
+		</div>
+		
+		<div class="ui-switchable-body">
+			<div class="ui-switchable-panel-main">
+				<!-- 1 -->
+				<div class="ui-switchable-panel" style="background-color:#FBC85C;">
+					<div class="ui-switchable-panel-bd">
+						<div class="ui-switchable-panel-i">
+							<img class="a1" src="http://img11.360buyimg.com/da/g15/M04/1B/0A/rBEhWFKllHwIAAAAAAA9qKbANWwAAGjAAJ5J_0AAD3A469.jpg" width="340" height="260" 
+								id="img111" 
+								data-animate='{"from":"left:38px;transform:translateY(-100px);opacity:0", "to":"left:38px;transform:translateY(80px);opacity:1,left:-38px;transform:translateY(80px);opacity:1","speed":600,"easing":""}'
+							> 
+							<img class="a2" src="http://img13.360buyimg.com/da/g14/M0A/06/01/rBEhV1KllIAIAAAAAACRdhkvFOEAAGrBgE0z2AAAJGO673.jpg" width="300" height="370" data-animate='{"from":"right:-250px;top:5px;opacity:0", "to":"right:24px;top:5px;opacity:1","speed":600,"easing":"easeInOutElastic"}'> 
+						</div>
+					</div>
+				</div>
+				
+				<!-- 2 -->
+				<div class="ui-switchable-panel" style="display:none;background-color:#B0CF68;"> 
+					<div class="ui-switchable-panel-bd">
+						<div class="ui-switchable-panel-i">
+							<img class="a1" src="http://img10.360buyimg.com/da/g13/M0A/0A/17/rBEhUlKlfr4IAAAAAABVfKlb-5AAAGkFwG0a3UAAFWU697.jpg" width="340" height="260" data-animate='{"from":"left:38px;top:1px;opacity:0;transform:scaleY(1) rotate(0deg)", "to":"left:38px;top:10px;opacity:1;transform:scaleY(1) rotate(360deg)","speed":600}'> 
+							<img class="a2" src="http://img13.360buyimg.com/da/g13/M0A/0A/17/rBEhU1KlfsEIAAAAAAAvrC8E294AAGkFwLHKbAAAC_E073.jpg" width="300" height="370"  data-animate='{"from":"right:-250px;top:5px;opacity:0", "to":"right:24px;top:5px;opacity:1","speed":600,"easing":"easeInOutElastic"}'>
+						</div>
+					</div>
+				</div>
+
+				<!-- 3 -->
+				<div class="ui-switchable-panel" style="display:none;background-color:#E57979;">
+					<div class="ui-switchable-panel-bd"><div class="ui-switchable-panel-i"><img class="a1" src="http://img10.360buyimg.com/da/g15/M05/1B/09/rBEhWFKlfuQIAAAAAACF-FwUUycAAGimAOPnyYAAIYQ191.jpg" width="340" height="260" > 
+					<img class="a2" src="http://img12.360buyimg.com/da/g15/M06/1B/09/rBEhWlKlfuoIAAAAAADAG5V1xTYAAGimQCe0v4AAMAz119.jpg" width="300" height="370" > </div></div>
+				</div>
+
+				<!-- 4 -->
+				<div class="ui-switchable-panel" style="display:none;background-color:#FBA75C;">
+					<div class="ui-switchable-panel-bd">
+						<div class="ui-switchable-panel-i">
+							<img class="a1" src="http://img13.360buyimg.com/da/g13/M07/0B/0D/rBEhU1KpLy8IAAAAAACJ-3OYWxQAAGsjQHG48AAAIoT227.jpg" width="340" height="260" data-animate='{"from":"left:-38px;top:1px;opacity:0", "to":"left:38px;top:1px;opacity:1","speed":600,"easing":"easeInOutElastic"}'> 
+							<img class="a2" src="http://img12.360buyimg.com/da/g13/M07/0B/0D/rBEhUlKpLzMIAAAAAACS0o8mvKsAAGsjQKML_AAAJLq812.jpg" width="300" height="370" data-animate='{"from":"right:-250px;top:5px;opacity:0", "to":"right:24px;top:5px;opacity:1","speed":600,"easing":"easeInOutElastic"}'>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 5 -->
+				<div class="ui-switchable-panel" style="display:none;background-color: rgb(227, 119, 119)">
+					<div class="ui-switchable-panel-bd">
+						<div class="ui-switchable-panel-i">
+							<img class="a1" src="http://img12.360buyimg.com/da/g14/M08/08/08/rBEhV1KyqxQIAAAAAAB7wXzMHfAAAHGqgAAAAAAAHvZ535.jpg" width="340" height="260" data-animate='{"from":"left:38px;top:-100px;opacity:0", "to":"left:38px;top:10px;opacity:1","speed":600}'> 
+							<img class="a2" src="http://img10.360buyimg.com/da/g14/M08/08/08/rBEhVVKyqxgIAAAAAABxlLjuxb4AAHGqgDQmZMAAHGs331.jpg" width="300" height="370" data-animate='{"from":"right:-250px;top:5px;opacity:0", "to":"right:24px;transform:rotate(0deg);top:5px;opacity:1;transform:rotate(50deg)","speed":600,"easing":"easeInOutElastic"}'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui-switchable-page">
+			<a href="javascript:void(0)" class="ui-switchable-prev">上一页</a>
+			<a href="javascript:void(0)" class="ui-switchable-next">下一页</a>
+		</div>
+	</div>
+</div>

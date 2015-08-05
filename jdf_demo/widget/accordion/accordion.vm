@@ -1,0 +1,12 @@
+<!-- accordion -->
+<div id="accordion">
+	<div class="ui-accordion-main">
+		<a href="http://www.jd.com" target="_blank" class="ui-accordion-item"><img src="http://img12.360buyimg.com/da/g13/M00/14/1A/rBEhUlJ3EPQIAAAAAACacJoQogMAAE9sgPC_ScAAJqI746.jpg"></a>
+		<a href="http://www.jd.com" target="_blank" class="ui-accordion-item"><img src="http://img10.360buyimg.com/da/g13/M08/14/19/rBEhU1J28lYIAAAAAAC6aRY5rDUAAE9SAFN3IsAALqB529.jpg"></a>
+		<a href="http://www.jd.com" target="_blank" class="ui-accordion-item"><img src="http://img10.360buyimg.com/da/g14/M07/19/08/rBEhVlJ0X-wIAAAAAABxFNw0h80AAE79gE-EdIAAHEs267.jpg"></a>
+		<a href="http://www.jd.com" target="_blank" class="ui-accordion-item"><img src="http://img12.360buyimg.com/da/g13/M00/14/1A/rBEhUlJ3EJIIAAAAAABsLGh-kBcAAE9sgLXBpgAAGxE728.jpg"></a>
+		<a href="http://www.jd.com" target="_blank" class="ui-accordion-item"><img src="http://img11.360buyimg.com/da/g14/M08/19/08/rBEhV1J0YHAIAAAAAAB7R7-_sYwAAE7-AAwhskAAHtf673.jpg"></a>
+		<a href="http://www.jd.com" target="_blank" class="ui-accordion-item"><img src="http://img12.360buyimg.com/da/g14/M08/19/08/rBEhVVJ0YKUIAAAAAACTHUwWopgAAE7-AIvRMEAAJM1659.jpg"></a>
+	</div>
+</div>
+<!-- accordion -->

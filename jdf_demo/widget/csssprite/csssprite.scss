@@ -1,0 +1,63 @@
+/*css sprite test*/
+ .csssprite {
+    clear:both;
+    margin-bottom:20px;
+    width: 308px;
+    height: 167px;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    li {
+        float:left;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        height: 84px;
+        overflow: hidden;
+        a {
+            width: 42px;
+            height: 83px;
+            padding: 0 5px;
+            text-align: center;
+            display:block;
+            padding: 0 17px;
+            i {
+                display: block;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                margin-left: 16px;
+                margin-top: 6px;
+            }
+            s {
+                display: block;
+                width: 42px;
+                height: 34px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .abtest_huafei s {
+        background:url(i/icon_01.png?__sprite) no-repeat;
+    }
+    .abtest_lvxing s {
+        background:url(i/icon_03.png?__sprite) no-repeat 6px 0px;
+    }
+    .abtest_caipiao s {
+        background:url(i/icon_05.png?__sprite) no-repeat 3px 0px;
+    }
+    .abtest_youxi s {
+        background:url(i/icon_07.png?__sprite) no-repeat 2px 0px;
+    }
+    .abtest_jipiao s {
+        background:url(i/icon_16.png?__sprite) no-repeat 2px 0px;
+    }
+    .abtest_dianyingpiao s {
+        background:url(i/icon_18.png?__sprite) no-repeat 6px 3px;
+    }
+    .abtest_yanchupiao s {
+        background:url(i/icon_20.png?__sprite) no-repeat 1px -3px;
+    }
+    .abtest_shuidianmei s {
+        background:url(i/icon_22.png?__sprite) no-repeat 1px 3px;
+    }
+}
