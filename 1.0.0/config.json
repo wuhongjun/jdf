@@ -1,0 +1,18 @@
+{
+	"host": "page.jd.com",
+	"user": "www",
+	"password": "www",
+	"baseDir": "",
+	"cssDir": "unit",
+	"outputCustom": "ui,unit",
+	"outputDirName": "build_temp",
+	"projectPath": "jdf/1.0.0/",
+	
+	"cdn": "http://misc.360buyimg.com",
+	"serverDir": "misc.360buyimg.com",
+	
+	"cdn1": "https://miscssl.360buyimg.com",
+	"serverDir1": "miscssl.360buyimg.com",
+
+	"localServerPort": 1024
+}

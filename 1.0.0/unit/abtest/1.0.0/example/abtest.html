@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>abtest</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet"  href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css"/>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+<style type="text/css">
+    *{margin: 0;padding: 0}
+    body{padding: 10px;font-size: 16px;}
+</style>
+
+</head>
+<body>
+<h1 style="font-size: 16px;color: red;">声明：为了避免逻辑预判失误，分配的各项百分比总和不能大于100，否则代码不会执行且还会出现讨厌的alert对话框！(?isdebug=1时启用)</h1>
+<h1 style="font-size: 16px;color: darkblue;">测试：在URL后面添加abtest=（数值1-100）,配合isdebug=1使用，如：abtest.html?isdebug=1&abtest=50</h1>
+=====================================================
+<div id="ddd1" style="display: none;">dddd1</div>
+<div id="ddd2" style="display: none;">dddd2</div>
+<br/>
+==================================================
+<div id="aaaaa1" style="display: none;">aaaaa1</div>
+<div id="aaaaa2" style="display: none;">aaaaa2</div>
+<div id="aaaaa3" style="display: none;">aaaa3</div>
+<br/>
+==================================================
+<div id="bbb1" style="display: none;">bbb1</div>
+<div id="bbb2" style="display: none;">bbb2</div>
+<div id="bbb3" style="display: none;">bbb3</div>
+
+<script type="text/javascript">
+    !console ? console = {info:function(){}} : 0;
+/**
+ * 第一种，Object
+ * 当我们只需要两个条件来显示逻辑时，可以采用它
+ *
+ * @Param:
+ *
+ * -percent:
+ * 显示概率百分比
+ *
+ * -id:
+ * Dom节点ID，用于当JDA数值在设定的百分比时，程序会将它的style.display设为block
+ * --为空时，不执行此逻辑
+ *
+ * -fn:
+ * 当百分比条件达成时（也就是JDA数据在其范围时），会在Dom节点显示后执行
+ * @return this 指向为当前对象{percent: 20, id: 'aaaaa1',...}
+ * --为空时，不执行此逻辑
+ *
+ * -inverse:
+ * 当百分比条件未达成时，会执行此函数，通常用于第二个百分比逻辑
+ * @return this 指向为当前对象{percent: 20, id: 'aaaaa1',...}
+ * --注意，此属性只在第一种数据类型（Object）采用
+ *
+ */
+
+/**
+ * 第二，Array
+ * 当我们需要两个以上条件来显示逻辑时，可以采用它
+ *
+ * @Param: [obj,obj,obj,...]
+ *
+ * @Param -obj
+ *
+ * -percent:
+ * 显示概率百分比
+ *
+ * -id:
+ * Dom节点ID，用于当JDA数值在设定的百分比时，程序会将它的style.display设为block
+ * --可以为空
+ *
+ * -fn:
+ * 当百分比条件达成时（也就是JDA数据在其范围时），会在Dom节点显示后执行
+ * @return this 指向为当前对象{percent: 20, id: 'aaaaa1',...}
+ * --如果id不为空时，fn可以为空
+ *
+ */
+
+/**
+ * 声明：为了避免逻辑预判失误，分配的各项百分比总和不能大于100，否则代码不会执行且还会出现讨厌的alert对话框！
+ * */
+
+seajs.config({
+	alias:{
+		'abtest':'jdf/1.0.0/unit/abtest/1.0.0/abtest.js'
+//		'abtest':'http://localhost:63342/jdf/1.0.0/unit/abtest/1.0.0/abtest.js'
+	}
+});
+
+seajs.use('abtest',function(abtest){
+    abtest({
+        percent: 67.35,
+        id: 'ddd1',
+        inverse: function () {
+            document.getElementById('ddd2').style.display = 'block';
+        }
+    });
+
+    abtest([
+        {percent: 10, id: 'aaaaa1'},
+        {percent: 70, id: 'aaaaa2', fn: function () {
+            console.info("我也会执行的，aaaaa2显示了");
+        }},
+        {fn: function () {
+            /**percent值计算为100-20-70=10*/
+            document.getElementById('aaaaa3').style.display = 'block';
+        }}
+    ]);
+
+    abtest([
+        {percent: 10, id: 'bbb1'},
+        {percent: 80, fn: function () {
+            document.getElementById('bbb2').style.display = 'block';
+        }},
+        {id: 'bbb3' /**percent值计算为100-10-80=10*/}
+    ]);
+});
+
+</script>
+</body>
+</html>

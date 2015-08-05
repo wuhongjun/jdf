@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>智能快捷键</title>
+    <link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+    <script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+    <style type="text/css">
+        /*demo style*/
+        .lightBox{
+            width: 280px;
+            height: 280px;
+            float: left;
+            background: #f1f1f1;
+            position: relative;
+            margin-left:50px;
+        }
+        .light{
+            width: 80px;
+            height: 80px;
+            float: left;
+            background: #888;
+            margin-left:10px;
+            margin-bottom:10px;
+            margin-top: 5px;
+        }
+        .open{
+            background: #fff;
+        }
+        /*demo style*/
+    </style>
+</head>
+<body>
+<h2>智能快捷键</h2>
+<!--demo html-->
+<p style="text-align: center;font-size: 20px;">鼠标点击黑色区域，然后键盘按2至9键或f+1组合键</p>
+<div class="lightBox">
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+</div>
+<div class="lightBox">
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+</div>
+<!--demo html-->
+<script type="text/javascript">
+    seajs.use(['jdf/1.0.0/ui/smartkey/1.0.0/smartkey'], function () {
+        //demo script
+        $('.lightBox').each(function(i){
+            $(this).smartkey({
+                name:'test'+i,
+                keys:['f+1','2','3','4','5','6','7','8','9'],
+                callback:function(key){
+                    var _this = $(this).find('.light').eq(key - 1);
+                    _this.css({background:'#aaa'});
+
+                    setTimeout(function(){
+                        _this.css({background:'#bbb'});
+                    },100);
+                    setTimeout(function(){
+                        _this.css({background:'#fff'});
+                    },200);
+                    setTimeout(function(){
+                        _this.css({background:'#888'});
+                    },300);
+                }
+            });
+        });
+
+        $('body').smartkey({
+            name:'body',
+            keys:['1','2','3','4','5','6','7','8','9'],
+            callback:function(key){
+               //console.info(key);
+            }
+        });
+
+        $('body').smartkey({
+            name:'body2',
+            keys:['1'],
+            callback:function(key){
+                //console.info(key,'====');
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>

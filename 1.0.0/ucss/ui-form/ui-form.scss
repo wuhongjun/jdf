@@ -1,0 +1,58 @@
+@import "../ui-lib/ui-lib";
+
+
+.ui-form-item{
+	margin-bottom: 30px;
+}
+
+.ui-form-label, .ui-form-info{
+	float: left;
+	font-size: 14px;
+}
+
+.ui-form-label{
+	width: 10%;
+	text-align: right;
+	line-height: 38px;
+	color: #666;
+
+	label{
+		font-size: inherit;
+	}
+}
+
+.ui-form-text{
+	padding: 5px 25px 5px 10px;
+}
+.ui-form-select{
+	height: 38px;
+}
+
+.ui-form-notnull{
+	color: #e4393c;
+	font-weight: normal;
+	font-size: inherit;
+	margin-right: 5px;
+}
+
+.ui-form-msg{
+	padding: 0.5em;
+	border: 1px solid #ddd;
+	background-color: #eee;
+	color: #666;
+}
+
+.ui-form-error{
+	padding: 0.5em;
+	border:1px solid #ffbdbe;
+	background-color: #ffebeb;
+	color: #f00;
+}
+
+span.ui-form-msg, span.ui-form-error{
+	@include inline-block;
+}
+
+p.ui-form-msg, p.ui-form-error{
+	margin-top: 5px;
+}

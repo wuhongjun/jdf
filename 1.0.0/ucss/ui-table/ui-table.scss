@@ -1,0 +1,49 @@
+@import "../ui-lib/ui-lib";
+
+.ui-table-contaner{
+	width: 800px;
+}
+
+.ui-table{
+	width: 100%;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	text-align: left;
+
+	thead{
+		background-color: #f7f7f7;
+
+		tr{
+			color: #666;
+			font-weight: bold;
+		}
+
+	}
+
+	th{
+		padding: 8px 10px;
+		text-align: left;
+	}
+
+	td{
+		padding: 10px;
+		border-bottom: 1px solid #ddd;
+	}
+}
+
+@mixin noboder(){
+	border: 0;
+	outline: 0;
+}
+
+.ui-table-noborder{
+	@include noboder;
+}
+
+.ui-table-inbox{
+	@include noboder;
+}
+
+.ui-table-intensify{
+	border-top: 2px solid #999;
+}

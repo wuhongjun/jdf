@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ui-form</title>
+<link rel="stylesheet" type="text/css" href="../../ui-base/ui-base.css">
+<link rel="stylesheet" type="text/css" href="../ui-form.css">
+</head>
+<body>
+<div class="ui-form">
+	<form action="">
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				<b class="ui-form-notnull">*</b><label for="username">账户名：</label>
+			</div>
+			<div class="ui-form-info">
+				<input id="username" type="text" class="ui-form-text">
+			</div>
+		</div>
+
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				<b class="ui-form-notnull">*</b><label for="password">请设置密码：</label>
+			</div>
+			<div class="ui-form-info">
+				<input id="password" type="password" class="ui-form-text">
+				<span class="ui-form-msg">密码为字母、数字的组合，区分大小写！</span>
+			</div>
+		</div>
+
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				<b class="ui-form-notnull">*</b><label for="re-password">请确认密码：</label>
+			</div>
+			<div class="ui-form-info">
+				<input id="re-password" type="password" class="ui-form-text">
+				<p class="ui-form-msg">请再次输入密码</p>
+			</div>
+		</div>
+
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				<label for="phone">手机：</label>
+			</div>
+			<div class="ui-form-info">
+				<input id="phone" type="text" class="ui-form-text">
+				<span class="ui-form-error">请输入您的手机号</span>
+			</div>
+		</div>
+
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				<label for="mail">邮箱：</label>
+			</div>
+			<div class="ui-form-info">
+				<input id="mail" type="text" class="ui-form-text">
+				<p class="ui-form-error">请输入您的邮箱地址</p>
+			</div>
+		</div>
+
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				<label>公司所在地：</label>
+			</div>
+			<div class="ui-form-info">
+				<select class="ui-form-select">
+					<option value="">北京</option>
+					<option value="">上海</option>
+				</select>
+
+				<select class="ui-form-select">
+					<option value="">朝阳区</option>
+					<option value="">海淀区</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				<b class="ui-form-notnull">*</b><label for="verification">验证码：</label>
+			</div>
+			<div class="ui-form-info">
+				<input id="verification" type="text" class="ui-form-text">
+				<img src="ui-form.jpg" alt=""><span> 看不清？<a href="#">换一张</a></span>
+			</div>
+		</div>
+
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				<b class="ui-form-notnull">*</b><label for="info">个人介绍：</label>
+			</div>
+			<div class="ui-form-info">
+				<textarea class="ui-form-text" id="info" cols="50" rows="5"></textarea>
+			</div>
+		</div>
+
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				 &nbsp;
+			</div>
+			<div class="ui-form-info">
+				<input type="checkbox" id="agreement"><label for="agreement">我已阅读并同意<a href="#" target="_blank">《京东用户注册协议》</a></label>
+			</div>
+		</div>
+
+		<div class="ui-form-item clearfix">
+			<div class="ui-form-label">
+				 &nbsp;
+			</div>
+			<div class="ui-form-info">
+				<input type="submit" value="立即注册">
+			</div>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>

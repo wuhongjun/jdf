@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>快捷键</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<style type="text/css">
+/* 测试样式 */
+#searchInput{width:188px;padding:3px 5px;border:2px solid #e4393c;background:none;}
+.ui-suggestion{border:1px solid #e4393c;border-top:none;width:200px;-moz-box-shadow: 0 0 5px #999;-webkit-box-shadow: 0 0 5px #999;box-shadow: 0 0 5px #999;}
+.ui-suggestion li{padding:3px 5px;}
+.ui-suggestion li:hover, .ui-suggestion .current{background-color:#ffdfc6;}
+.ui-suggestion .ui-suggest-close{text-align:right;}
+.ui-suggestion .ui-suggest-close:hover{background:#fff;}
+.ui-suggestion .ui-suggest-close a:hover{color:#666;}
+.ui-suggestion a:hover{text-decoration:none;}
+.ui-suggestion .ui-suggest-key{font-weight:bold;}
+.ui-suggestion .ui-suggest-item span{display:block;float:right;}
+.ui-suggest-close{border-top:1px solid #f1f1f1;}
+</style>
+</head>
+<body>
+<h2>支持快捷键 向上（选择），向下（选择），回车键（等同于鼠标点击onClick），ESC（关闭）</h2>
+<input type="text" name="keyword" id="searchInput" autocomplete="off"/>
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/smartkey/1.0.0/smartkey','jdf/1.0.0/ui/suggestion/1.0.0/suggestion'],function(){
+		var searchInput = $('#searchInput');
+        var suggestion = searchInput.suggestion({
+			url:"http://dd.search.360buy.com/?key=",
+			dataType:"jsonp",
+			mainId :'suggestion',
+            smartkey:true,
+			itemTpl:'<li class="ui-suggest-item"><a href="javascript:void(0)" class="ui-suggest-key"><%=keyword%></a>&nbsp;&nbsp;<span>约<%=amount%>个商品</span></li>',
+			onClick:function(key){
+//				 alert(key);
+			}
+		});
+	});
+</script>
+
+</body>
+</html>

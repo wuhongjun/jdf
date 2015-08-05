@@ -1,0 +1,32 @@
+
+body{padding-left:20px;}
+
+/*stepflex*/
+.ui-step{margin-top:20px;height: 31px;}
+.ui-step dl{text-align:center;float:left;position:relative;width:130px;top:-5px;border-top:5px solid #ccc}
+.ui-step .num{position:relative;margin:-15px auto 0;color:#fff;font-weight:bold;width:23px;height:23px;line-height:25px;background-image:url(ui-step.png);}
+.ui-step .text{color:#ccc}
+dl.doing{border-top-color:#7abd54}
+.ui-step .doing .num{background-position:-23px 0}
+.ui-step .doing .text{color:#7abd54}
+.ui-step dl.done{border-top-color:#caecb6}
+.ui-step .done .num{background-position:-46px 0}
+.ui-step .done .text{color:#caecb6}
+
+.ui-step .first s,
+.ui-step .last b,
+.ui-step .doing s,
+.ui-step .doing b{width:5px;height:5px;position:absolute;line-height:0;font-size:0;top:-5px;background-image:url(ui-step.png);overflow:hidden}
+.ui-step s{left:0}
+.ui-step b{right:0}
+
+.ui-step .first s{background-position:0 -24px;background-color:#fff}
+.ui-step .last b{background-position:-5px -24px;background-color:#fff}
+.ui-step .doing s{background-position:-23px -24px}
+.ui-step .doing b{background-position:-28px -24px;background-color:#ccc}
+
+.ui-step dl.normal s{background-color:#caecb6}
+.ui-step dl.last s{background-color:#caecb6}
+.ui-step dl.last b{background-color:#fff}
+.ui-step .done s{background-position:-46px -24px}
+.ui-step .done b{background-position:-51px -24px}

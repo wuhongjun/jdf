@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>带小箭头</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<style type="text/css">
+/* 测试样式 */
+.ui-switchable-item {float:left;padding:5px 10px;margin-right:20px;}
+.ui-switchable-selected{background-color:#f1f1f1;border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;}
+
+.ui-switchable-arrow{width:68px;}
+.ui-switchable-selected{background-color:#fff;color:#E4393C;}
+</style>
+</head>
+<body>
+
+<h2>带小箭头</h2>
+<br />
+
+<div id="tab" style="width:672px;">
+	<ul>
+		<li class="ui-switchable-item">今日特价</li>
+		<li class="ui-switchable-item">热卖商品</li>
+		<li class="ui-switchable-item">最新降价</li>
+		<li class="ui-switchable-item">新品到货</li>
+	</ul>
+	<div>
+		<div class="ui-switchable-panel-main">
+			<div class="ui-switchable-panel" ><img src="http://img13.360buyimg.com/da/g14/M05/15/1C/rBEhVVJfWUwIAAAAAADuXEur8t8AAER1AJFwNkAAO50477.jpg" /></div>
+			<div class="ui-switchable-panel" style="display:none;"><img src="http://img13.360buyimg.com/da/g14/M04/16/05/rBEhVlJgxDkIAAAAAADnpQs6f5gAAEVKwFHGIwAAOe9074.jpg" /></div>
+			<div class="ui-switchable-panel" style="display:none;"><img src="http://img10.360buyimg.com/da/g15/M03/0F/18/rBEhWFJeTdgIAAAAAADnzmiSQTQAAENfwKFvmMAAOfm066.jpg" /></div>
+			<div class="ui-switchable-panel" style="display:none;"><img src="http://img11.360buyimg.com/da/g14/M00/15/15/rBEhVlJeCegIAAAAAADhV3zKug8AAEO1AGW8mYAAOFv185.jpg" /></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/switchable/1.0.0/switchable'],function(){
+		$('#tab').switchable({
+			hasCssLink:true,
+			hasArrow:true,
+			navItem:'ui-switchable-item',//nav中item的className
+			navSelectedClass:'ui-switchable-selected',//nav选中时className
+			contentClass:'ui-switchable-panel-main',//主体
+			mainClass:'ui-switchable-panel',//主体panel的className
+			mainSelectedClass:'ui-switchable-panel-selected',//主体panel选中时className
+		});
+	});
+</script>
+
+</body>
+</html>

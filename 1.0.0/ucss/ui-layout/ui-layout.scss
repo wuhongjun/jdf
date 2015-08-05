@@ -1,0 +1,112 @@
+@import "../ui-lib/ui-lib";
+
+html, body{
+	height: 100%;
+}
+
+.wrap1{
+	width: 990px;
+	height: 800px;
+	margin: 0 auto;
+	background: #ddd;
+}
+
+.left1{
+	float: left;
+	width: 300px;
+	background: #999;
+	height: 100%;
+}
+.right1{
+	background: #ddd;
+	height: 100%;
+}
+
+.left2{
+	background: #ddd;
+	height: 100%;
+}
+.right2{
+	float: right;
+	width: 300px;
+	background: #999;
+	height: 100%;
+}
+
+.left3, .right3{
+	width: 300px;
+	height: 100%;
+	background: #999;
+}
+.left3{
+	float: left;
+}
+.right3{
+	float: right;
+}
+.center3{
+	background: #ddd;
+	height: 100%;
+}
+
+.wrap4{
+	height: 100%;
+	overflow: hidden;
+}
+.left4{
+	float: left;
+	width: 300px;
+	height: 100%;
+	background: #999;
+}
+.right4{
+	background: #ddd;
+	padding-bottom: 1000px;
+	margin-bottom: -1000px;
+}
+
+.left5, .right5{
+	height: 100%;
+	width: 50%;
+}
+.left5{
+	float: left;
+}
+.left5 .main{
+	margin-right: 300px;
+	background: #999;
+	height: 100%;
+}
+.right5{
+	float: right;
+}
+.right5 .main{
+	margin-left: 300px;
+	background: #999;
+	height: 100%;
+}
+.center5{
+	width: 600px;
+	height: 100%;
+	margin: 0 auto;
+	background: #ddd;
+}
+
+.wrap2 { width: 940px; border: 1px #c2c2c2 solid; margin: 0 auto;  overflow: hidden; }
+.wrap2 .list { float: left; width: 300px; margin: 10px 0 0 10px;  }
+.wrap2 .list p { background-color: #999; margin-bottom: 10px; }
+.wrap2 .list .p1 { height: 200px; }
+.wrap2 .list .p2 { height: 225px; }
+.wrap2 .list .p3 { height: 250px; }
+.wrap2 .list .p4 { height: 300px; }
+
+.wrap3{
+	width: 800px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -300px;
+	background: #ddd;
+}

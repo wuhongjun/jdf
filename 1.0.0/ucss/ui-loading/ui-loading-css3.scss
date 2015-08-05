@@ -1,0 +1,40 @@
+@import "../ui-lib/ui-lib";
+
+.ui-loading{
+	margin: 20px;
+}
+
+.ui-loading li, .ui-loading ul::before, .ui-loading ul::after{
+	float: left;
+	width: 110px;
+	height: 20px;
+	margin-right: 2px;
+	overflow: hidden;
+	background-color: #ddd;
+	content: "";
+}
+
+@include keyframes(blink){
+	0%, 40%{
+		background-color: #ddd;
+	}
+	60%, 100%{
+		background-color: #7abd54;
+	}
+}
+
+$interval: 1s;
+.ui-loading{
+	ul::before{
+		@include animation(blink $interval infinite);
+	}
+
+	li{
+		@include animation(blink $interval 0.2s infinite);
+	}
+
+	ul::after{
+		@include animation(blink $interval 0.4s infinite);
+	}
+}
+

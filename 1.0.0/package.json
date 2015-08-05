@@ -1,0 +1,25 @@
+{
+	"name": "jdf",
+	"version": "1.0.0",
+	"author": "jd fe",
+	"api": {
+		"name": "jdf组件库API",
+		"description": "![logo](http://misc.360buyimg.com/lib/img/e/logo-201305.png)\njdf组件库包括UI组件和Unit组件，UI组件是基于jQuery的轻量级UI组件库，符合jquery ui组件规范\n组件提供了一些必要的公共方法，同时兼容IE6-IE10，chrome，firefox，safari等常见浏览器"
+	},
+	"apisource":"ui/",
+	"demosource":"./",
+	"demoExclude":"ucss|ui-base|ui-lib|build|build_temp|ui\/tips\/1.1.0\/",
+	"docsource":"doc/",
+	"target":"doc_build/",
+	"demopathprefix":"../",
+	"stat":"<div style=\"display:none;\"><script type=\"text/javascript\">var cnzz_protocol = ((\"https:\" == document.location.protocol) ? \" https://\" : \" http://\");document.write(unescape(\"%3Cspan id='cnzz_stat_icon_1253674552'%3E%3C/span%3E%3Cscript src='\" + cnzz_protocol + \"s95.cnzz.com/stat.php%3Fid%3D1253674552%26online%3D2' type='text/javascript'%3E%3C/script%3E\"));</script></div>",
+	"extendHtml":"",
+	"copyright":"<a href=\"http://jdc.jd.com/\" target=\"_blank\"><img src=\"http://img10.360buyimg.com/da/jfs/t1006/107/806415799/1590/b85f9252/55474c77Ned16f962.png\" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>问题反馈：</span><a href=\"mailto:liuwei1@jd.com\"><i>Email</i></a>&nbsp;&nbsp;<i>官方咚咚群815294&nbsp;QQ群305542952</i>&nbsp;&nbsp;",
+	"extendMenu":{
+		"http://jbox.jd.com/quickshare/w4tqj7mgvjjx6":"jdf tool 1.0",
+		"http://fe.jd.com/jdf/rp/index.html":"rp",
+		"https://www.npmjs.com/package/jdf":"npm",
+		"https://github.com/putaoshu/jdf":"<img src=\"http://img12.360buyimg.com/da/jfs/t490/325/947067095/482/9b92260b/549a63ecN2fe3b523.png\" />&nbsp;github",
+		"http://fe.jd.com/":"jdc_fe"
+	}
+}

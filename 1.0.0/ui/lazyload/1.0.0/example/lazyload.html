@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>懒惰加载</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+</head>
+<body>
+<h2>懒惰加载-图片</h2>
+<p>滚动至第二屏查看效果</p>
+
+<ul style="height: 1024px"></ul>
+
+<img data-lazy-img="http://img12.360buyimg.com/n4/g7/M03/08/0D/rBEHZlBzwZwIAAAAAAI4sOvIiLkAABpMQDf8E4AAjjI749.jpg" width="100" height="100" />
+<img data-lazy-img="http://img10.360buyimg.com/n4/g12/M00/0C/0F/rBEQYVGoTQ8IAAAAAACfY6UCknEAACcDwPCdPwAAJ97179.jpg" width="100" height="100" />
+<img data-lazy-img="http://img12.360buyimg.com/n4/1238/205e4505-068f-44d0-a238-89b05efd8e17.jpg" width="100" height="100" />
+<img data-lazy-img="http://img14.360buyimg.com/n4/g13/M01/00/14/rBEhVFG0VvQIAAAAAAI2ePmQeJUAAAIGgDpmbQAAjaQ778.jpg" width="100" height="100" />
+<img data-lazy-img="http://img13.360buyimg.com/n4/g14/M0A/04/10/rBEhVlHbagsIAAAAAAHExNBJYqQAAA4lgGc2vcAAcTc922.jpg"  width="100" height="100" />
+
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/lazyload/1.0.0/lazyload'],function(){
+		$('body').lazyload();
+	});
+
+</script>
+
+</body>
+</html>

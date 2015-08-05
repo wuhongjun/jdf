@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>自定义样式</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<style type="text/css">
+/*测试样式*/
+.ui-scrollbar-item3{border: #ccc 1px solid;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;background: #ddd;}
+</style>
+
+</head>
+<body>
+<h2>自定义样式,没有头尾部</h2>
+<br />
+<div id="scrollbar3" style="width:300px;height:200px;">
+	<div class="ui-scrollbar-main">
+		scrollbar 
+		<br /> 		<br /> 		<br /> 		<br /> 		<br />
+		-------------------------
+		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		-------------------------
+		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br /> 		<br />
+		-------------------------
+		<br /> 
+		<div>bottom</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/scrollbar/1.0.0/scrollbar' , 'jdf/1.0.0/ui/drag/1.0.0/drag'],function(){
+		$('#scrollbar3').scrollbar({
+			width:6,
+			scrollClass:'ui-scrollbar-item3',
+			mainClass:'ui-scrollbar-main',//主体clsass
+			hasHeadTail:false,
+			limit:false
+		});
+	});
+</script>
+
+</body>
+</html>

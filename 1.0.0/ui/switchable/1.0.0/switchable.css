@@ -1,0 +1,8 @@
+.ui-switchable-arrow{position:absolute;z-index:1;top:20px;left:0;height:7px;border-bottom:2px solid #E4393C;overflow:hidden;text-align:center}
+.ui-switchable-arrow b{display:inline-block;margin-top:-8px;width:0;height:0;border-style:dashed dashed solid;border-width:10px;border-color:transparent transparent #E4393C;overflow:hidden;zoom:1;font-size:0}
+
+.ui-switchable-prev,.ui-switchable-next{position:absolute;display:block;width:30px;height:100%;text-indent:-9999em;z-index:1000;bottom:0}
+.ui-switchable-prev{left:0px;background:url(switchable_btn_prev.png) no-repeat center center;}
+.ui-switchable-next{right:0px;background:url(switchable_btn_next.png) no-repeat center center;}
+.ui-switchable-prev:hover{background-image:url(switchable_btn_prev_on.png);background-color:rgba(255,255,255,.5);}
+.ui-switchable-next:hover{background-image:url(switchable_btn_next_on.png);background-color:rgba(255,255,255,.5);}

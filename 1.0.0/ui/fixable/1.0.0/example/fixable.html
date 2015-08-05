@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>位置固定</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<style type="text/css">
+	div{background-color:#fff;border:1px solid #ccc;padding:5px 10px;width:100px;background-color:#f1f1f1;text-align:center;}
+</style>
+
+</head>
+<body>
+
+<h3>位置固定</h3>
+<ul style="height: 2048px"></ul>
+<br />
+	<div id="fixable1">
+		1 left,top
+	</div>
+
+	<div id="fixable2">
+		2 left,bottom
+	</div>
+
+	<div id="fixable3">
+		3 right,top
+	</div>
+
+	<div id="fixable4">
+		4 right,bottom
+	</div>
+
+	<div id="fixable5">
+		5 right center
+	</div>
+	
+	<div id="fixable6">
+		6 bottom center
+	</div>
+	
+	<div id="fixable7">
+		7 top center
+	</div>
+
+	<div id="fixable8">
+		8 center	 center
+	</div>
+
+	<div id="fixable9">
+		9 left	 center
+	</div>
+<br />
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/fixable/1.0.0/fixable'],function(){
+		//创建组件
+		$('#fixable1').fixable({
+			x:'left',
+			y:'top',
+			xValue:50,
+			yValue:40
+		});
+
+		$('#fixable2').fixable({
+			x:'left',
+			y:'bottom',
+			xValue:0,
+			yValue:0
+		});
+
+		$('#fixable3').fixable({
+			x:'right',
+			y:'top',
+			xValue:0,
+			yValue:0
+		});
+
+		$('#fixable4').fixable({
+			x:'right',
+			y:'bottom',
+			xValue:0,
+			yValue:0
+		});
+
+		$('#fixable5').fixable({
+			x:'right',
+			y:'bottom',
+			xValue:0,
+			yValue:'center'
+		});
+
+		$('#fixable6').fixable({
+			x:'right',
+			y:'bottom',
+			xValue:'center',
+			yValue:0
+		});
+
+		$('#fixable7').fixable({
+			x:'right',
+			y:'top',
+			xValue:'center',
+			yValue:0
+		});
+
+		$('#fixable8').fixable({
+			x:'right',
+			y:'top',
+			xValue:'center',
+			yValue:'center'
+		});
+
+
+		$('#fixable9').fixable({
+			x:'left',
+			y:'top',
+			xValue:0,
+			yValue:'center'
+		});
+	});
+</script>
+
+</body>
+</html>

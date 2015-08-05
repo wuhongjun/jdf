@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>倒计时</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+</head>
+<body>
+
+<h2>控制</h2>
+
+<div id="countdown" class="ui-countdown"></div>
+
+<button onclick="play()">开始</button><button onclick="stop()">暂停</button>
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/countdown/1.0.0/countdown'],function(){
+		var countdown = $('#countdown').countdown({
+			currentTime:1460197953259,
+			endTime:"2025/12/23 00:00:00",
+			onEnd:function() {
+				this.el.html("结束了")
+			},
+			onChange:function(leaveTime){
+				this.el.html("现在离" + leaveTime.endTime + "还有" + leaveTime.day + "天" + leaveTime.hour + "小时" + leaveTime.minute + "分" + leaveTime.second + "秒")
+			}
+		});
+
+		window['play'] = function(){
+			countdown.play();
+		};
+		window['stop'] = function(){
+			countdown.stop();
+		};
+	});
+</script>
+
+</body>
+</html>

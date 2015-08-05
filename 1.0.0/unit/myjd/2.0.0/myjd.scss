@@ -1,0 +1,83 @@
+
+#ttbar-myjd{
+	.dt{
+		width:49px;
+		padding-right:25px;
+	}
+	.dorpdown-layer{
+		width:270px;
+	}
+
+	.userinfo{
+		padding:10px 15px;
+		overflow:hidden;
+	}
+	.u-pic{
+		float:left;
+		margin-right:10px;
+		img{border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
+	}
+	.u-name{
+		padding:6px 0 0;
+		font-weight:bold;
+	}
+
+	.orderlist{
+		display:none;
+		background:#000;
+	}
+
+
+	.otherlist{
+		width:255px;
+		padding:0 0 0 15px;
+		margin:5px 0;
+		/*border-bottom:1px dotted #ccc;*/
+		overflow:hidden;
+		margin-bottom: 10px;
+		.fore1,
+		.fore2{
+			float:left;
+			width:126px;
+		}
+	}
+
+
+	.viewlist{
+		width:240px;
+		padding:0 15px 10px;
+		border-top:1px dotted #ccc;
+		padding-top:10px;
+		.smt{
+			h4{
+				float:left;
+			}
+			.extra{
+				float:right;
+			}
+		}
+		.item{
+			float:left;
+			padding:4px;
+			line-height:0;
+			font-size:0;
+		}
+	}
+
+
+	.dd-spacer{
+		left:0;
+		width:82px;
+	}
+}
+
+/*
+#ttbar-myjd .orderlist .item{overflow:hidden;border-top:1px dotted #ccc;zoom:1;}
+#ttbar-myjd .orderlist .fore1{border-top:none;}
+#ttbar-myjd .orderlist span{color:#FF6600;}
+#ttbar-myjd .orderlist .p-img{padding-left:4px;}
+#ttbar-myjd .orderlist .p-img img,
+#ttbar-myjd .orderlist .more{float:left;border:1px solid #ddd;margin-right:3px;}
+#ttbar-myjd .orderlist .more{width:50px;height:50px;background:url(http://misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png) no-repeat 0 -250px;overflow:hidden;line-height:150px;margin-right:0;}
+#ttbar-myjd .orderlist .p-detail{padding-top:2px;}
+*/

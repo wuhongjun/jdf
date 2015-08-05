@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>fixed</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<body>
+
+<div id="dialog"></div>
+
+<!-- 填充页面 -->
+<ul id="thelist"></ul>
+<script type="text/javascript">
+    for(var i = 0, html = []; i < 51; i++) {html.push('<li>&nbsp;&nbsp;</li>');}
+    $('#thelist').html(html.join(''));
+</script>
+<!-- 填充页面 -->
+
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/dialog/1.0.0/dialog'],function(){
+		$('body').dialog({
+			title:'fixed',
+			fixed:true,
+			height:200,
+			source:'这是fixed dialog'
+		});
+	});
+</script>
+
+</body>
+</html>

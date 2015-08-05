@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>lazyload</title>
+	<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+	<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+	<style>
+		.ui-switchable-panel{border:1px solid #aaa}
+		.ui-switchable-panel-selected{border-color: #C81623;}
+	</style>
+</head>
+<body>
+<h2>图片切换</h2>
+<br />
+<div id="imgscroll">
+	<div>
+		<img width="200" height="200" data-src="http://img11.360buyimg.com/n0/g14/M07/1A/03/rBEhVVJ5rD0IAAAAAAGYc2BiTTIAAFGXgPR7rgAAZiL327.jpg" class="ui-switchable-imgscroll-img" />
+	</div>
+
+	<div class="ui-switchable-panel-body" style="margin:5px 0;height:52px;">
+		<ul class="ui-switchable-panel-main">
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g14/M07/1A/03/rBEhVVJ5rD0IAAAAAAGYc2BiTTIAAFGXgPR7rgAAZiL327.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g14/M07/1A/03/rBEhVVJ5rD0IAAAAAAGYc2BiTTIAAFGXgPR7rgAAZiL327.jpg"></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g6/M05/06/13/rBEGF1DvvkMIAAAAAAD0b64yKhAAABSzgDL45EAAPSH898.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g6/M05/06/13/rBEGF1DvvkMIAAAAAAD0b64yKhAAABSzgDL45EAAPSH898.jpg" ></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g14/M09/17/04/rBEhVlJnYW8IAAAAAAFjOooHBOgAAEhVQAv3-cAAWNS473.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g14/M09/17/04/rBEhVlJnYW8IAAAAAAFjOooHBOgAAEhVQAv3-cAAWNS473.jpg" ></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g10/M00/0C/0A/rBEQWFFINpEIAAAAAAENu92M7ikAACaEAEAr2sAAQ3T536.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g10/M00/0C/0A/rBEQWFFINpEIAAAAAAENu92M7ikAACaEAEAr2sAAQ3T536.jpg" ></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g6/M05/06/13/rBEGF1DvvkcIAAAAAAF33To0a0UAABSzgFGTv0AAXf1274.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g6/M05/06/13/rBEGF1DvvkcIAAAAAAF33To0a0UAABSzgFGTv0AAXf1274.jpg" ></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g6/M05/06/13/rBEGF1DvvkUIAAAAAADXrTd0ALEAABSzgDz2ngAANfF839.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g6/M05/06/13/rBEGF1DvvkUIAAAAAADXrTd0ALEAABSzgDz2ngAANfF839.jpg" ></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g6/M05/06/13/rBEGF1DvvkQIAAAAAAEbAwOIvAMAABSzgDfzg0AARsb530.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g6/M05/06/13/rBEGF1DvvkQIAAAAAAEbAwOIvAMAABSzgDfzg0AARsb530.jpg" ></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g6/M05/06/13/rBEGC1DvvksIAAAAAAExlnit0xcAABSzgEYNE8AATGu451.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g6/M05/06/13/rBEGC1DvvksIAAAAAAExlnit0xcAABSzgEYNE8AATGu451.jpg" ></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g6/M05/06/13/rBEGC1DvvkoIAAAAAADZGNcjIl0AABSzgDoxooAANkw682.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g6/M05/06/13/rBEGC1DvvkoIAAAAAADZGNcjIl0AABSzgDoxooAANkw682.jpg" ></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g6/M05/06/13/rBEGDFDvvj4IAAAAAAGVwvQAZd0AABSzgExuToAAZXa807.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g6/M05/06/13/rBEGDFDvvj4IAAAAAAGVwvQAZd0AABSzgExuToAAZXa807.jpg" ></li>
+			<li class="ui-switchable-panel"><img class="ui-switchable-imgscroll-item" data-src="http://img11.360buyimg.com/n5/g6/M05/06/13/rBEGDFDvvj0IAAAAAAFG6LPRxbkAABSzgEM-sYAAUcA508.jpg" width="50" height="50" data-url="http://img11.360buyimg.com/n0/g6/M05/06/13/rBEGDFDvvj0IAAAAAAFG6LPRxbkAABSzgEM-sYAAUcA508.jpg" ></li>
+		</ul>
+	</div>
+
+	<div>
+		<a href="javascript:void(0)" class="ui-switchable-prev">上一页</a>
+		<a href="javascript:void(0)" class="ui-switchable-next">下一页</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/switchable/1.0.0/switchable'],function(){
+		$('#imgscroll').switchable({
+			type:'imgscroll',
+			imgscrollLazyload:true,
+			step:1,
+			autoLock:true,
+			hasPage:true,
+			visible:5,
+			speed:200,
+			event:'mouseover',
+			width:52,
+			imgscrollClass:'ui-switchable-imgscroll-img',
+			bodyClass:'ui-switchable-panel-body',
+			contentClass:'ui-switchable-panel-main',
+			mainClass:'ui-switchable-panel',
+			mainSelectedClass:'ui-switchable-panel-selected',
+			prevClass:'ui-switchable-prev',
+			nextClass:'ui-switchable-next',
+			pagCancelClass:'ui-switchable-page-cancel'
+		});
+	});
+</script>
+
+</body>
+</html>

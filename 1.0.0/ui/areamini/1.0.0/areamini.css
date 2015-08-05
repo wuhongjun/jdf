@@ -1,0 +1,116 @@
+.ui-areamini-wrap {
+    position: relative;
+    z-index: 3;
+    height: 26px;
+    margin-right: 6px
+}
+
+.ui-areamini-wrap.ui-areamini-hover {
+    z-index: 4;
+}
+
+.ui-areamini-wrap .ui-areamini-text-wrap {
+    float: left;
+    position: relative;
+    top: 0;
+    height: 23px;
+    background: #fff;
+    border: 1px solid #CECBCE;
+    padding: 0 20px 0 4px;
+    line-height: 23px;
+    overflow: hidden
+}
+
+.ui-areamini-wrap .ui-areamini-text-wrap b {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 17px;
+    height: 24px;
+    background-image: url(area_arrow.png);
+    background-position: 0px 0px;
+    overflow: hidden
+}
+
+.ui-areamini-wrap .ui-areamini-text-wrap b, .ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-close {
+    background-repeat: no-repeat
+}
+
+.ui-areamini-wrap.ui-areamini-hover .ui-areamini-text-wrap {
+    z-index: 1;
+    height: 25px;
+    border-bottom: 0
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap {
+    display: none;
+    float: left;
+    position: absolute;
+    top: 25px;
+    left: -45px;
+    border: 1px solid #CECBCE;
+    width: 265px;
+    padding: 15px;
+    background: #fff;
+    -moz-box-shadow: 0 0 5px #ddd;
+    -webkit-box-shadow: 0 0 5px #ddd;
+    box-shadow: 0 0 5px #ddd
+}
+
+.ui-areamini-wrap.ui-areamini-hover .ui-areamini-content-wrap {
+    display: block;
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-content-list a:hover {
+    color: #fff
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-content-list {
+    padding-top: 5px
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-content-list li {
+    float: left;
+    width: 50px;
+    padding: 2px 0 2px 15px;
+    clear: none
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-content-list li a {
+    float: left;
+    padding: 2px 4px;
+    color: #005aa0
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-content-list li a:hover {
+    background: #005ea7;
+    color: #fff
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-content-list .longer-area {
+    width: 265px
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-content-list .long-area {
+    width: 115px
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap select {
+    float: left;
+    width: 120px;
+    border: 1px solid #CECBCE;
+    margin-right: 15px
+}
+
+.ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-close {
+    position: absolute;
+    z-index: 2;
+    top: -8px;
+    right: -8px;
+    width: 17px;
+    height: 17px;
+    background-image: url(area_close.png);
+    background-position: 0px 0px;
+    cursor: pointer;
+}

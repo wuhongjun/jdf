@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>event</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+</head>
+<body>
+
+<h3>event</h3>
+<p><button class="myevent">自定义事件</button></p>
+
+<script type="text/javascript">
+seajs.config({	
+	alias:{
+		'event':'jdf/1.0.0/unit/event/1.0.0/event.js'
+	}
+})
+
+seajs.use('event',function(jdEvent){
+	jdEvent.on('event1',function(data){
+		alert(data);
+	});
+	
+	$('.myevent').bind('click',function(){
+		jdEvent.trigger('event1','这是自定义事件');
+	});
+})
+</script>
+
+</body>
+</html>

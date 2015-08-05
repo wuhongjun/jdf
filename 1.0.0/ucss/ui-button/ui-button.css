@@ -1,0 +1,13 @@
+.ui-button {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+  .ui-button .ico {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 18px;
+    height: 15px;
+    background: url(ui-icon.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle; }

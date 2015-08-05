@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>关注商品</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+</head>
+<body>
+
+<h3>follow</h3>
+<p><button data-id="1027342" class="coll">关注商品</button></p>
+
+<br />
+<p>注：页面需要放在 <i>*.jd.com</i> 下预览</p>
+
+<script type="text/javascript">
+seajs.config({	
+	alias:{
+		'follow':'jdf/1.0.0/unit/follow/1.0.0/follow.js'
+	}
+})
+
+seajs.use('follow',function(follow){
+	follow.init($('.coll'));
+})
+
+</script>
+
+</body>
+</html>

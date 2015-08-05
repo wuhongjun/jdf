@@ -1,0 +1,17 @@
+/*
+* @ui-list 普通文本list
+*/
+/*.ui-list li{}*/
+
+/*
+* @ui-list-row 两列文本list
+*/
+.ui-list-row{width:310px;}
+.ui-list-row li{float:left;width:135px;}
+
+/*
+* @ui-list-dl 带左右对齐的list
+*/
+.ui-list-dl{display: inline-block;}
+.ui-list-dl dt{float:left;width:15%; text-align:right; margin:0;}
+.ui-list-dl dd{float:left;width:85%; text-align:left; margin:0;}

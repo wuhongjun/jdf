@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>图片预览</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+<style>
+.img-preview li{float: left; margin: 10px; border: 1px solid #ccc;}
+.img-preview li:hover{border-color: #666;}
+</style>
+</head>
+<body>
+
+<ul class="img-preview">
+	<li><a href="#"><img width=150 class="ui-preview-img" src="http://img11.360buyimg.com/n1/g12/M00/0C/13/rBEQYVNfdAIIAAAAAAQBqsXbXbIAAFSXgGcnX4ABAHC902.jpg" data-big-img="http://img14.360buyimg.com/popWaterMark/jfs/t406/147/178075261/101886/288da86/540ed609N46b2be63.jpg" alt=""></a>
+	</li>
+	<li><a href="#"><img width=150 class="ui-preview-img" src="http://img14.360buyimg.com/n1/g14/M08/0E/0F/rBEhV1LjcPkIAAAAAAO_NPvDHogAAIUlAHJougAA79M164.jpg" data-big-img="http://img14.360buyimg.com/n0/g14/M08/0E/0F/rBEhV1LjcPkIAAAAAAO_NPvDHogAAIUlAHJougAA79M164.jpg" alt=""></a>
+	</li>
+	<li><a href="#"><img width=150 class="ui-preview-img" src="http://img13.360buyimg.com/n1/jfs/t409/143/602072939/184878/10f6b016/542500c0Nd806df5a.jpg" data-big-img="http://img13.360buyimg.com/n0/jfs/t409/143/602072939/184878/10f6b016/542500c0Nd806df5a.jpg" alt=""></a>
+	</li>
+</ul>
+
+<script>
+seajs.use(['jdf/1.0.0/ui/imgpreview/1.0.0/imgpreview.js', 'jdf/1.0.0/ui/dialog/1.0.0/dialog.js'], function(imgpreview){
+	$('.img-preview').imgpreview();
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>iframe</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+
+<body>
+
+<div id="dialog"></div>
+
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/dialog/1.0.0/dialog'],function(){
+		$('body').dialog({
+			title:'title',
+			width:500,
+			type:'iframe',
+			source:'iframe.html'
+		});
+	});
+</script>
+
+</body>
+</html>

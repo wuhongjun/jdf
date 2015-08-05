@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>日历</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+<style type="text/css">
+p{width:300px;margin-bottom: 10px;margin-left: 30px;}
+</style>
+</head>
+<h2>日历</h2>
+<p>完整版<input type="text" id="calendar"> &nbsp;&nbsp;</p>
+<p>普通<input type="text" id="calendar1"> &nbsp;&nbsp; </p>
+<p>普通带初始值<input type="text" id="calendar1-1" value="2014年03月25日"> &nbsp;&nbsp; </p>
+<p>普通带初始值2<input type="text" id="calendar1-2"> &nbsp;&nbsp; </p>
+<!--<p>普通带初始值，可编辑<input type="text" id="calendar1-3" value="2014-01-01"> &nbsp;&nbsp; </p>-->
+<p>简单模式<input type="text" id="calendar2"> &nbsp;&nbsp;</p>
+<p>双日历<input type="text" id="calendar3"> &nbsp;&nbsp;</p>
+<p>有节假日信息<input type="text" id="calendar4"> &nbsp;&nbsp;</p>
+<p style="width:800px">起始日期(带范围限制)<input type="text" id="calendar5" value="2014-03-25"> &nbsp;&nbsp;</p>
+<p>有选择年月下拉框<input type="text" id="calendar6"> &nbsp;&nbsp;</p>
+<p>事件调用<input type="text" id="calendar7"> &nbsp;&nbsp;</p>
+<p>显示今日<input type="text" id="calendar8"> &nbsp;&nbsp;</p>
+<p>垂直距中显示<input type="text" id="calendar9"> &nbsp;&nbsp;</p>
+<p style="width:800px">输出格式自定义(yyyy年mm月dd日 零点)<input type="text" id="calendar10"> &nbsp;&nbsp;</p>
+<p style="width:800px">关联模式（yyyy-mm-dd）： 开始日期：<input type="text" id="calendarS1"> &nbsp;&nbsp;结束日期：<input type="text" id="calendarE1"> &nbsp;&nbsp;</p>
+<p style="width:800px">关联模式（yyyy-mm-dd hh:min:ss）： 开始日期：<input type="text" id="calendarS2"> &nbsp;&nbsp;结束日期：<input type="text" id="calendarE2"> &nbsp;&nbsp;</p>
+
+<script type="text/javascript">
+    seajs.use(['jdf/1.0.0/ui/calendar/1.0.0/calendar'],function(){
+        $('#calendar').calendar({
+            format : 'yyyy-mm-dd',
+            isCompleteMode:true,
+            changeMonth: true,
+            changeYear: true,
+            hasFestival:true,
+            isDouble:true,
+            hasToday:true,
+            today : '今日'
+        });
+
+        $('#calendar1').calendar();
+
+        $('#calendar1-1').calendar({
+            format : 'yyyy年mm月dd日'
+        });
+
+        $('#calendar1-2').calendar({
+            defaultDate: '2012-12-21 12:12:12',
+            format : 'yyyy-mm-dd hh:min:ss',
+            changeHour: true,
+            changeMinute: true,
+            changeSecond: true
+        });
+
+    //    calendar.setValue('2012-12-21');
+    /***
+     * 暂时不建议使用，正常操作没有问题，只是用户体验不是太好
+     */
+    //    $('#calendar1-3').calendar({
+    //        format : 'yyyy-mm-dd',
+    //        readonly : false
+    //    });
+
+        $('#calendar2').calendar({
+            format : 'yyyy-mm-dd',
+            isCompleteMode:false
+        });
+
+        $('#calendar3').calendar({
+            isDouble:true
+        });
+
+        $('#calendar4').calendar({
+            hasFestival:true
+        });
+
+        $('#calendar5').calendar({
+            format : 'yyyy/mm/dd',
+            beginDate:'2014/03/22',
+            endDate:'2014/06/25'
+        });
+
+        $('#calendar6').calendar({
+            isCompleteMode:false,
+            changeMonth: true,
+            changeYear: true
+        });
+
+        $('#calendar7').calendar({
+    //		onReady:function(){
+    //			  console.log('onReady');
+    //		},//初始化结束回调
+    //		onShow:function(){
+    //			  console.log('onShow');
+    //		},//日历显示出来时回调
+    //		onHide:function(){
+    //			  console.log('onHide');
+    //		},//日历隐藏时回调
+    //		onPrevMonth:function(){
+    //			  console.log('onPrevMonth');
+    //		},//切换至上月回调
+    //		onNextMonth:function(){
+    //			 console.log('onNextMonth');
+    //		},//切换至下月回调
+    //		onSelectDate:function(date){
+    //			console.log('onSelectDate');
+    //			console.log(date);
+    //		}//选择某个日期回调
+        });
+
+        $('#calendar8').calendar({
+            hasToday:true,//是否显示今日
+            today : '今日'//今日文案
+        });
+
+        $('#calendar9').calendar({
+            type:'center'
+        });
+
+
+        $('#calendar10').calendar({
+            hasToday:true,
+            today : '今日',
+            format : 'yyyy年mm月dd日 零点'
+    //        format : 'yyyy-mm-dd 00:00:00'
+        });
+
+
+        var calendarS1 = $('#calendarS1').calendar({
+            format : 'yyyy-mm-dd',
+            changeMonth: true,
+            changeYear: true,
+    //        isDouble:true,
+            onSelectDate: function(date){
+                calendarE1.setBeginDate(date);
+            }
+        });
+
+        var calendarE1 = $('#calendarE1').calendar({
+            format : 'yyyy-mm-dd',
+            changeMonth: true,
+            changeYear: true,
+    //        isDouble:true,
+            onSelectDate: function(date){
+                calendarS1.setEndDate(date);
+            }
+        });
+
+        var calendarS2 = $('#calendarS2').calendar({
+            format : 'yyyy-mm-dd hh:min:ss',
+            changeMonth: true,
+            changeYear: true,
+            changeHour:true,
+            changeMinute:true,
+            changeSecond:true,
+            isDouble:true,
+            isCloseOnSelectDay:false,
+            onSelectDate: function(date){
+                calendarE2.setBeginDate(date);
+            }
+        });
+
+        var calendarE2 = $('#calendarE2').calendar({
+            format : 'yyyy-mm-dd hh:min:ss',
+            changeMonth: true,
+            changeYear: true,
+            changeHour:true,
+            changeMinute:true,
+            changeSecond:true,
+            isDouble:true,
+            isCloseOnSelectDay:false,
+            onSelectDate: function(date){
+                calendarS2.setEndDate(date);
+            }
+        });
+
+    });
+</script>
+</html>

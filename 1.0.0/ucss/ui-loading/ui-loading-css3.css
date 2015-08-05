@@ -1,0 +1,45 @@
+.ui-loading {
+  margin: 20px; }
+
+.ui-loading li, .ui-loading ul::before, .ui-loading ul::after {
+  float: left;
+  width: 110px;
+  height: 20px;
+  margin-right: 2px;
+  overflow: hidden;
+  background-color: #ddd;
+  content: ""; }
+
+@-webkit-keyframes blink {
+  0%, 40% {
+    background-color: #ddd; }
+
+  60%, 100% {
+    background-color: #7abd54; } }
+
+@-moz-keyframes blink {
+  0%, 40% {
+    background-color: #ddd; }
+
+  60%, 100% {
+    background-color: #7abd54; } }
+
+@keyframes blink {
+  0%, 40% {
+    background-color: #ddd; }
+
+  60%, 100% {
+    background-color: #7abd54; } }
+
+.ui-loading ul::before {
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  animation: blink 1s infinite; }
+.ui-loading li {
+  -webkit-animation: blink 1s 0.2s infinite;
+  -moz-animation: blink 1s 0.2s infinite;
+  animation: blink 1s 0.2s infinite; }
+.ui-loading ul::after {
+  -webkit-animation: blink 1s 0.4s infinite;
+  -moz-animation: blink 1s 0.4s infinite;
+  animation: blink 1s 0.4s infinite; }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>翻动动画</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<style type="text/css">
+.product img{vertical-align:top;}
+.product li{float:left;width:100px;height:100px;position:relative;margin-right:30px;cursor:pointer;}
+.p-img{padding:0;}
+.p-name a{color:#fff;}
+.p-name a:hover{text-decoration:none;color:#fff;}
+
+.transparent-bg{
+	background:rgba(0,0,0,0.4);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000',endColorstr='#66000000');
+	_filter:none;
+	_background:#666;
+}
+
+.p-name-noraml{
+	position:absolute;bottom:1px;left:0;text-align:center;width:100%;padding:2px 0;color:#fff;cursor:pointer;
+}
+
+#product2 .p-name{
+	position:absolute;width:90px;height:90px;padding:5px;bottom:0;color:#fff;
+	visibility:hidden;
+	opacity:0;
+	-webkit-transform:perspective(300px) rotateX(-95deg);
+	-webkit-transform-origin:50% 100%;
+	-webkit-transition:all .35s;
+	-moz-transform:perspective(300px) rotateX(-95deg);
+	-moz-transform-origin:50% 100%;
+	-moz-transition:all .35s;
+	transform:perspective(300px) rotateX(-95deg);
+	transform-origin:50% 100%;transition:all .35s
+}
+
+#product2 .p-name-on{
+	visibility:visible;
+	opacity:1;
+	-webkit-transform:perspective(300px) rotateX(0deg);
+	-moz-transform:perspective(300px) rotateX(0deg);
+	transform:perspective(300px) rotateX(0deg)
+}
+</style>
+
+</head>
+<body>
+<h2>翻动动画</h2>
+<br />
+
+<div class="product clearfix" id="product2">
+	<ul>
+		<li>
+			<p class="p-img">  
+				<img width="100" height="100" alt="电视" src="http://img10.360buyimg.com/vclist/g9/M03/09/0A/rBEHalCAHgIIAAAAAAASdgX5ZGUAAB0dQNMNvkAABKO130.jpg">
+			</p>
+			<p class="transparent-bg p-name-noraml">电视</p>
+			<p class="transparent-bg p-name"> <a target="_blank" href="#">臻致画面，小窗口延伸家的幸福边界</a> </p>
+		</li>
+		<li>
+			<p class="p-img">
+				<img width="100" height="100" alt="微波炉" src="http://img10.360buyimg.com/vclist/g9/M03/0D/10/rBEHaVCV__gIAAAAAAAKwJKchb4AACpHgNJWZoAAArY850.jpg" class="err-product">
+			</p>
+			<p class="transparent-bg p-name-noraml">微波炉</p>
+			<p class="transparent-bg p-name"> <a target="_blank" href="#">把厨房交给它！再忙碌也要关心你的胃！</a> </p>
+		</li>
+		<li>
+			<p class="p-img"> 
+				<img width="100" height="100" alt="血压计" src="http://img10.360buyimg.com/vclist/g8/M03/0D/02/rBEHZ1CPuq0IAAAAAAANCw5x9_QAACjogOIIgQAAA0j452.jpg">
+			</p>
+			<p class="transparent-bg p-name-noraml">血压计</p>
+			<p class="transparent-bg p-name">
+				<a target="_blank" href="#">九安5008，关爱健康，品质之选！</a>
+			</p>
+		</li>
+		<li class="hover">
+			<p class="p-img"> 
+				<img width="100" height="100" alt="足浴盆" src="http://img10.360buyimg.com/vclist/g6/M05/01/09/rBEGC1CPtC0IAAAAAAARj-IVTyoAAAQPgP_lnoAABGn655.jpg">
+			</p>
+			<p class="transparent-bg p-name-noraml">足浴盆</p>
+			<p class="transparent-bg p-name"> 
+				<a target="_blank" href="#">每天泡脚，改善气血循环与睡眠，缓解疲劳，有助新陈代</a> 
+			</p>
+		</li>
+	</ul>
+</div>
+
+<br />
+<p>注意:不要在主体的父级元素上加overflow:hidden</p>
+
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/easing/1.0.0/easing'],function(){
+		$('#product2 li').hover(function(){
+			$(this).find('.p-name-noraml').hide();
+			$(this).find('.p-name').addClass('p-name-on');
+		},function(){
+			$(this).find('.p-name-noraml').show();
+			$(this).find('.p-name').removeClass('p-name-on')
+		})
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+@import "../ui-lib/ui-lib";
+
+.ui-tab{
+	li{
+		text-align: center;
+		font-size: 14px;
+		padding: 0.5em 0;
+		cursor: default;
+
+		&.z-curr{
+			color: #e4393c;
+			font-weight: bold;
+		}
+	}
+}
+
+.ui-tab-cont{
+	padding: 1em;
+}
+
+.ui-tab-h{
+	.ui-tab li{
+		float: left;
+		width: 150px;
+	}
+}
+
+
+
+
+.ui-tab-v{
+	width: 800px;
+
+	.ui-tab{
+		float: left;
+		width: 20%;
+		height: 
+	}
+
+	.ui-tab-cont{
+		float: left;
+
+	}
+}
+
+.ui-tab-img{
+	li{
+		margin: 5px;
+		border: 1px solid #dedede;
+
+		&.z-curr{
+			border-color: #e4393c;
+		}
+	}
+}

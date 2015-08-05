@@ -1,0 +1,33 @@
+/*
+* @ui-list-img
+*/
+.ui-list-img:after{content:'';display:block;height:0;clear:both;}
+.ui-list-img{width:750px;zoom:1;}
+.ui-list-img li{float:left;width:150px;}
+.ui-list-img .p-name{width:130px;height:3em;overflow:hidden;}
+
+/*
+* @ext
+*/
+.ui-list-img-row{width:230px;}
+.ui-list-img-row li{float:left;width:110px;}
+
+.ui-list-img-vertical{width:150px;zoom:1;}
+
+.ui-list-img-left .p-img,
+.ui-list-img-left .p-name,
+.ui-list-img-left .p-price{float:left;}
+.ui-list-img-left li{width:230px;}
+
+.ui-list-img-right .p-img{float:right;}
+.ui-list-img-right .p-name,
+.ui-list-img-right .p-price{float:left;}
+.ui-list-img-right li{width:230px;}
+
+.ui-list-img-bottom li{position:relative;}
+.ui-list-img-bottom .p-ext{position:absolute;bottom:0;
+	background-color:rgba(255,255,255,0.3);
+}
+
+.ui-list-img-bottom .p-name{float:left;height:1.5em;width:50px;overflow:hidden;}
+.ui-list-img-bottom .p-price{float:right;}

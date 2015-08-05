@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>省份地区</title>
+    <link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+    <script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+    <style>
+        .ui-areamini-wrap .ui-areamini-content-wrap .ui-areamini-content-list a.sel {
+            color: red
+        }
+    </style>
+</head>
+<body>
+
+<div id="area1" class="ui-areamini-wrap">
+    <div class="ui-areamini-text-wrap"><!--展示内容主体-->
+        <div class="ui-areamini-text"></div><!--显示被选中的地区-->
+        <b></b><!--小箭头-->
+    </div>
+    <div class="ui-areamini-content-wrap"><!--弹出内容主体-->
+        <div class="ui-areamini-content"></div><!--地区内容-->
+        <div class="ui-areamini-close"></div><!--关闭按钮-->
+    </div>
+</div>
+
+<script type="text/javascript">
+    seajs.use(['jdf/1.0.0/ui/areamini/1.0.0/areamini'], function () {
+        $('#area1').areamini({
+            syncServer:true,
+            writeCookie:false,
+            provinceList:[
+                //点击a 不会执行回调onchange
+                {name:'海外', tpl:'<li><a  href="http://www.jd.com" target="_blank"><%=name%></a></li>'},
+                //添加 data-onchange="1"   会执行回调onchange(a),只有一个参数，跟原onchange不一样
+                {name:'海外2', tpl:'<li><a data-onchange="1" href="http://www.jd.com" target="_blank"><%=name%></a></li>'}
+            ],
+            className:{
+                text:'ui-areamini-text-wrap',
+                text_text:'ui-areamini-text',
+                content:'ui-areamini-content-wrap',
+                content_content:'ui-areamini-content',
+                close:'ui-areamini-close',
+                selected:'sel'
+            },
+            onChange:function(a, area, local){
+
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

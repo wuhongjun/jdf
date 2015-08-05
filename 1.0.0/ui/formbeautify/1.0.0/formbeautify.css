@@ -1,0 +1,12 @@
+.ui-form-checkbox-replacer{width:19px;height:25px;padding:0 5px 0 0;background:url(checkbox.gif) no-repeat;display:block;float:left;}
+.ui-form-checkbox-on{background-position: 0px -50px;}
+.ui-form-checkbox-toggle{background-position: 0px -25px;}
+.ui-form-radio-replacer{width:19px;height:25px;padding:0 5px 0 0;background:url(radio.gif) no-repeat;display:block;float:left;}
+.ui-form-radio-on{background-position: 0px -50px;}
+.ui-form-radio-toggle{background-position: 0px -25px;}
+
+.ui-form-select{position:relative;width:190px;z-index:2;opacity:0;-moz-opacity:0;filter:alpha(opacity=0); -webkit-appearance: none;}
+.ui-form-select-replacer{position:absolute;width:158px;height:21px;padding:0 24px 0 8px;color:#fff;background:url(select.gif) no-repeat;overflow:hidden;}
+.ui-form-select-options{position: absolute; left: 0; z-index: 2; background: #fff; border: 1px solid #ccc; border-top: none; display: none;}
+.ui-form-select-options li{white-space: nowrap; overflow: hidden; height: 22px; line-height: 22px; padding: 0 5px;}
+.ui-form-select-options li.hover{background: blue; color: #fff;}

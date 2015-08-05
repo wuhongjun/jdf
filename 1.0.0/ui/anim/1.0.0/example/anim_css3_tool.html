@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>animate css3 工具</title>
+<!-- animate样式 -->
+<link rel="stylesheet" href="animate_css3/animate.css"/>
+<!-- /animate样式 -->
+
+<!-- demo样式 -->
+<link rel="stylesheet" href="animate_css3/style.css"/>
+<!-- /demo样式 -->
+</head>
+<body>
+<header role="banner">
+	<h1 class="animated bounceInDown">
+		animate css3
+	</h1>
+</header>
+<div class="animated fadeIn container">
+	<div class="content">
+		
+		<div class="getCode">
+			<button class="btn animated swing" id="getCode">查看代码</button>
+			<textarea class="codeContainer" style="display:none;"></textarea>
+		</div>
+
+		<div class="sandbox">
+			<div id="animateTest">
+				<!-- <img src="img.jpg" /> -->
+				<p>Animate</p>
+			</div>
+		</div>
+		
+		<!--butt_box  -->
+		<div class="butt_box">
+			<h3>基本效果</h3>
+			<div class="butt_list"><a class="butt" data-test="flash">闪光灯 flash</a><a class="butt" data-test="bounce">弹起 bounce</a><a class="butt" data-test="shake">摇摆 shake</a><a class="butt" data-test="tada">秋千 tada</a><a class="butt" data-test="swing">swing</a><a class="butt" data-test="wobble">疯狂摆动 wobble</a><!--<a class="butt" data-test='wiggle'>摆动</a>--><a class="butt" data-test="pulse">脉冲 pulse</a></div>
+			<h3>翻转 </h3>
+			<div class="butt_list"><a class="butt" data-test="flip">翻转 flip</a><a class="butt" data-test="flipInX">X轴淡入 flipInX</a><a class="butt" data-test="flipOutX">X轴淡出 flipOutX</a><a class="butt" data-test="flipInY">Y轴淡入 flipInY</a><a class="butt" data-test="flipOutY">Y轴淡出 flipOutY</a></div>
+			<h3>淡入效果</h3>
+			<div class="butt_list"><a class="butt" data-test="fadeIn">淡入 fadeIn</a><a class="butt" data-test="fadeInUp">下方淡入 fadeInUp</a><a class="butt" data-test="fadeInDown">上方淡入 fadeInDown</a><a class="butt" data-test="fadeInLeft">左边淡入 fadeInLeft</a><a class="butt" data-test="fadeInRight">右边淡入 fadeInRight</a><a class="butt" data-test="fadeInUpBig">底部淡入 fadeInUpBig</a><a class="butt" data-test="fadeInDownBig">顶部淡入 fadeInDownBig</a><a class="butt" data-test="fadeInLeftBig">页面左边淡入 fadeInLeftBig</a><a class="butt" data-test="fadeInRightBig">页面右边淡入 fadeInRightBig</a></div>
+			<h3>淡出效果</h3>
+			<div class="butt_list"><a class="butt" data-test="fadeOut">淡出 fadeOut</a><a class="butt" data-test="fadeOutUp">向上淡出 fadeOutUp</a><a class="butt" data-test="fadeOutDown">向下淡出 fadeOutDown</a><a class="butt" data-test="fadeOutLeft">向左淡出 fadeOutLeft</a><a class="butt" data-test="fadeOutRight">向右淡出 fadeOutRight</a><a class="butt" data-test="fadeOutUpBig">顶部淡出 fadeOutUpBig</a><a class="butt" data-test="fadeOutDownBig">底部淡出 fadeOutDownBig</a><a class="butt" data-test="fadeOutLeftBig">页面左边淡出 fadeOutLeftBig</a><a class="butt" data-test="fadeOutRightBig">页面右边淡出 fadeOutRightBig</a></div>
+			<h3>弹跳进入效果</h3>
+			<div class="butt_list"><a class="butt" data-test="bounceIn">bounceIn</a><a class="butt" data-test="bounceInDown">bounceInDown</a><a class="butt" data-test="bounceInUp">bounceInUp</a><a class="butt" data-test="bounceInLeft">bounceInLeft</a><a class="butt" data-test="bounceInRight">bounceInRight</a></div>
+			<h3>弹跳退出效果</h3>
+			<div class="butt_list"><a class="butt" data-test="bounceOut">bounceOut</a><a class="butt" data-test="bounceOutDown">bounceOutDown</a><a class="butt" data-test="bounceOutUp">bounceOutUp</a><a class="butt" data-test="bounceOutLeft">bounceOutLeft</a><a class="butt" data-test="bounceOutRight">bounceOutRight</a></div>
+			<h3>旋转进入效果</h3>
+			<div class="butt_list"><a class="butt" data-test="rotateIn">rotateIn</a><a class="butt" data-test="rotateInDownLeft">rotateInDownLeft</a><a class="butt" data-test="rotateInDownRight">rotateInDownRight</a><a class="butt" data-test="rotateInUpLeft">rotateInUpLeft</a><a class="butt" data-test="rotateInUpRight">rotateInUpRight</a></div>
+			<h3>旋转退出效果</h3>
+			<div class="butt_list"><a class="butt" data-test="rotateOut">rotateOut</a><a class="butt" data-test="rotateOutDownLeft">rotateOutDownLeft</a><a class="butt" data-test="rotateOutDownRight">rotateOutDownRight</a><a class="butt" data-test="rotateOutUpLeft">rotateOutUpLeft</a><a class="butt" data-test="rotateOutUpRight">rotateOutUpRight</a></div>
+			<!--<h3>Lightspeed</h3>
+			<div class="butt_list"><a class="butt" data-test='lightSpeedIn'>lightSpeedIn</a><a class="butt" data-test='lightSpeedOut'>lightSpeedOut</a></div>-->
+			<h3>特效</h3>
+			<div class="butt_list"><a class="butt" data-test="hinge">hinge</a><a class="butt" data-test="rollIn">rollIn</a><a class="butt" data-test="rollOut">rollOut</a></div>
+			<p class="url">以上demo来源于：<a href="http://daneden.me/animate/" target="_blank">http://daneden.me/animate/</a></p> 
+		</div>
+		<!--/butt_box  -->
+
+	</div>
+</div>
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script src="animate_css3/data.js" type="text/javascript"></script>
+<script src="animate_css3/main.js" type="text/javascript"></script>
+
+</body>
+</html>

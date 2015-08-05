@@ -1,0 +1,29 @@
+.ui-tab li {
+  text-align: center;
+  font-size: 14px;
+  padding: 0.5em 0;
+  cursor: default; }
+  .ui-tab li.z-curr {
+    color: #e4393c;
+    font-weight: bold; }
+
+.ui-tab-cont {
+  padding: 1em; }
+
+.ui-tab-h .ui-tab li {
+  float: left;
+  width: 150px; }
+
+.ui-tab-v {
+  width: 800px; }
+  .ui-tab-v .ui-tab {
+    float: left;
+    width: 20%; }
+  .ui-tab-v .ui-tab-cont {
+    float: left; }
+
+.ui-tab-img li {
+  margin: 5px;
+  border: 1px solid #dedede; }
+  .ui-tab-img li.z-curr {
+    border-color: #e4393c; }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>自定义批量动画</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+
+<style type="text/css">
+.animate-wrap{position: relative;background: url(http://ww2.sinaimg.cn/large/627bf01djw1ebthbew2oej20zu0bmgnx.jpg);height: 420px;}
+.animate-main{position: absolute;width: 370px;height: 300px;z-index: 12;top:50%;margin-left: -190px;left: 50%;margin-top: -100px;}
+.animate-main span {position: absolute;z-index:1000;}
+.animate-main .joy{left:50px;top:20px;left:56px;top:-7px}
+.animate-main .joy .joy-1{display:block}
+.animate-main .joy .joy-2{display:none}
+.animate-main .light{left:-20px;top:10px}
+.animate-main .light{left:-10px;top:30px}
+.animate-main .img-1{left:-10px;top:30px}
+.animate-main  .img-2{left:30px;top:110px}
+.animate-main  .img-3{left:284px;top:20px}
+.animate-main  .img-4{left:300px;top:110px}
+.animate-main  .img-5{left:240px;top:160px}
+
+</style>
+
+</head>
+<body>
+
+<h2>自定义批量动画</h2>
+<br />
+
+<div class="animate-wrap">
+	<div class="animate-main">
+		<span class="light" data-animate='{"from":"transform:scale(0);opacity:0", "to":"transform:scale(1);opacity:1","speed":null,"easing":"","delay":0}'>
+			<img src="http://img10.360buyimg.com/da/g14/M08/0D/00/rBEhVVIcfRkIAAAAAAAi6TF1M-sAACi3QKkJqAAACMB276.png"
+			>
+		</span>
+
+		<span class="img-1"  data-animate='{"from":"transform:scale(0);opacity:0", "to":"transform:scale(1);opacity:1","speed":null,"easing":"","delay":100}'>
+			<img src="http://img12.360buyimg.com/da/g14/M08/0D/00/rBEhV1IcfREIAAAAAAAauKspydYAACi3QILa3gAABrQ428.png"
+			>
+		</span>
+		<span class="img-2" data-animate='{"from":"transform:scale(0);opacity:0", "to":"transform:scale(1);opacity:1","speed":null,"easing":"","delay":300}'>
+			<img src="http://img12.360buyimg.com/da/g14/M08/0D/00/rBEhVVIcfQsIAAAAAABLMfPz3cAAACi3QGzAmYAAEtJ986.png"
+			>
+		</span>
+		<span class="img-3" data-animate='{"from":"transform:scale(0);opacity:0", "to":"transform:scale(1);opacity:1","speed":null,"easing":"","delay":250}'>
+			<img src="http://img13.360buyimg.com/da/g14/M05/0D/00/rBEhVVIcfQQIAAAAAAAQaGdAeUwAACi3AP_0OIAABCA116.png"
+			>
+		</span>
+		<span class="img-4" data-animate='{"from":"transform:scale(0);opacity:0", "to":"transform:scale(1);opacity:1","speed":null,"easing":"","delay":150}'>
+			<img src="http://img11.360buyimg.com/da/g14/M05/0D/00/rBEhVVIcfPwIAAAAAAAOwqJe3sQAACi3AP_wggAAA7a217.png"
+			>
+		</span>
+		<span class="img-5" data-animate='{"from":"transform:scale(0);opacity:0", "to":"transform:scale(1);opacity:1","speed":null,"easing":"","delay":200}'>
+			<img src="http://img14.360buyimg.com/da/g13/M05/08/08/rBEhUlIcfPQIAAAAAAATwCuULUUAACgUwP_120AABPY360.png"
+			>
+		</span>
+		<span class="joy" data-animate='{"from":"transform:scale(0);opacity:0", "to":"transform:scale(1);opacity:1","speed":null,"easing":"","delay":0}'>
+			<img class="joy-1" src="http://img13.360buyimg.com/da/g15/M08/07/01/rBEhWVIcfO0IAAAAAABLruTMN-8AACgfAGigmMAAEvG690.png"
+			>
+			<img class="joy-2" src="http://img14.360buyimg.com/da/g13/M05/08/08/rBEhVFIcfOUIAAAAAABLLwxnMBAAACgUwOZa68AAEtH909.png"
+			>
+		</span>
+	</div>
+</div>
+
+<br>
+<a id="draw" href="javascript:void(0)">动画开始</a>
+<br>
+<br>
+<a id="drawReset" href="javascript:void(0)">动画重新初始化</a>
+
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/easing/1.0.0/easing','jdf/1.0.0/ui/transform/1.0.0/transform','jdf/1.0.0/ui/anim/1.0.0/anim'],function(){
+		var animate = $('.animate-main').anim();
+		$('#draw').click(function(){
+			animate.trigger($('.animate-wrap'));
+		})
+
+		$('#drawReset').click(function(){
+			animate.update(true);
+		})
+	});
+</script>
+
+</body>
+</html>

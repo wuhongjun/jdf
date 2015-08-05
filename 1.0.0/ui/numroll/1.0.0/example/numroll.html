@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>数字滚动</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+<style type="text/css">
+	h1{
+		font: 20px "microsoft yahei","宋体";
+	}
+</style>
+</head>
+<body>
+<h1 style="font-size: 12em;margin: 0;color: #4d63bc;" id="myTargetElement">24.02</h1>
+<input value="start" id="start" type="button"><br>
+<input value="stop" id="stop" type="button"><br>
+<input value="resume" id="resume" type="button"><br>
+<input value="reset" id="reset" type="button"><br>
+
+<script type="text/javascript">
+	seajs.use('jdf/1.0.0/ui/numroll/1.0.0/numroll.js',function(){
+		var demo = $('#myTargetElement').numroll({
+			startVal: 24.02,
+			endVal: 94.62,
+			decimals: 2,
+			duration: 2.5,
+			complete: function() {}
+		});
+
+		$('#start').click($.proxy(demo.start, demo));
+		$('#stop').click($.proxy(demo.stop, demo));
+		$('#resume').click($.proxy(demo.resume, demo));
+		$('#reset').click($.proxy(demo.reset, demo));
+
+	})
+</script>
+
+</body>
+</html>

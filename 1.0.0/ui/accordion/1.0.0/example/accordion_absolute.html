@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>absolute</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<style type="text/css">
+/* 测试样式 */
+.ui-accordion{height:160px;border:1px solid #ccc;position: relative}
+.ui-accordion .ui-accordion-item{float:left;}
+.ui-accordion img{vertical-align:top;}
+</style>
+
+</head>
+<body>
+
+<h3>手风琴-absolute</h3>
+<br/>
+<div class="ui-accordion" id="accordion-absolute">
+    <div class="ui-accordion-main">
+        <ul>
+            <li class="ui-accordion-item">
+                <a href="http://sale.jd.com/mall/3BAzVtc8pP.html" target="_blank">
+                    <img width="502" height="160" src="http://img12.360buyimg.com/da/g13/M00/14/1A/rBEhUlJ3EPQIAAAAAACacJoQogMAAE9sgPC_ScAAJqI746.jpg" alt="雅漾安全防敏感交接秋夏" />
+                </a>
+            </li>
+            <li class="ui-accordion-item">
+                <a href="http://sale.jd.com/mall/3XRj5NFmnz.html" target="_blank">
+                    <img width="502" height="160" src="http://img10.360buyimg.com/da/g13/M08/14/19/rBEhU1J28lYIAAAAAAC6aRY5rDUAAE9SAFN3IsAALqB529.jpg" alt="薇姿理肤泉初秋防敏特惠" />
+                </a>
+            </li>
+            <li class="ui-accordion-item">
+                <a href="http://sale.jd.com/act/VCY2oIGXNc7dl.html?erpad_source=erpad" target="_blank">
+                    <img width="502" height="160" src="http://img10.360buyimg.com/da/g14/M07/19/08/rBEhVlJ0X-wIAAAAAABxFNw0h80AAE79gE-EdIAAHEs267.jpg" alt="夏日大作战3" />
+                </a>
+            </li>
+            <li class="ui-accordion-item">
+                <a href="http://sale.jd.com/act/Codb1xZIXP.html" target="_blank">
+                    <img width="502" height="160" src="http://img12.360buyimg.com/da/g13/M00/14/1A/rBEhUlJ3EJIIAAAAAABsLGh-kBcAAE9sgLXBpgAAGxE728.jpg" alt="相宜本草祛痘防敏特惠" />
+                </a>
+            </li>
+            <li class="ui-accordion-item">
+                <a href="http://sale.jd.com/act/Codb1xZIXP.html" target="_blank">
+                    <img width="502" height="160" src="http://img11.360buyimg.com/da/g14/M08/19/08/rBEhV1J0YHAIAAAAAAB7R7-_sYwAAE7-AAwhskAAHtf673.jpg" alt="相宜本草祛痘防敏特惠" />
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+seajs.use('jdf/1.0.0/ui/accordion/1.0.0/accordion',function(accordion){
+    //创建组件
+    $('#accordion-absolute').accordion({
+        itemClass:'ui-accordion-item',
+        mainClass:'ui-accordion-main',
+        type:'absolute',
+        widthDefault:200,
+        widthCurrent:502,
+        defaultSelected:0
+    });
+})
+</script>
+
+</body>
+</html>

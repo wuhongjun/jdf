@@ -1,0 +1,15 @@
+@import "../ui-lib/ui-lib";
+
+.ui-loading{
+	width: 103px;
+	text-align: center;
+	margin: 0 auto;
+	color: #999;
+
+	i{
+		@include inline-block;
+		width: 43px;
+		height: 30px;
+		background: url(loading-jd.gif) no-repeat;
+	}
+}

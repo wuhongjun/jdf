@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>更新节点</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+<script src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<style type="text/css">
+	/* 测试样式 */
+	.ui-switchable-panel{width: 290px;padding:10px;}
+	.ui-switchable-panel div{height: 188px;font-size: 22px;color: red;overflow: hidden}
+</style>
+</head>
+<body>
+<h2>动态更新节点（switchable.update 用法）<a class="add-item " href="javascript:;" style="color: red;font-size: 18px;">新增</a></h2>
+<br />
+
+<div id="slider" style="position:relative;overflow: hidden;width: 620px;">
+	<div>
+		<a href="javascript:void(0)" class="ui-switchable-prev">上一页</a>
+		<a href="javascript:void(0)" class="ui-switchable-next">下一页</a>
+	</div>
+
+	<div style="height:188px;">
+		<ul class="ui-switchable-panel-main">
+		    <li class="ui-switchable-panel">
+		        <div>
+					<img style="width: 290px;height:158px;" src="http://img13.360buyimg.com/da/g14/M05/15/1C/rBEhVVJfWUwIAAAAAADuXEur8t8AAER1AJFwNkAAO50477.jpg" />
+					<a class="remove-item " href="javascript:;" style="display: none;color: red;font-size: 18px;;">删除</a>
+				</div>
+		    </li>
+			<li class="ui-switchable-panel">
+				<div>
+					<img style="width: 290px;height:158px;" src="http://img13.360buyimg.com/da/g14/M04/16/05/rBEhVlJgxDkIAAAAAADnpQs6f5gAAEVKwFHGIwAAOe9074.jpg" />
+					<a class="remove-item " href="javascript:;" style="display: none;color: red;font-size: 18px;;">删除</a>
+				</div>
+			</li>
+			<li class="ui-switchable-panel">
+				<div>
+					<img style="width: 290px;height:158px;" src="http://img10.360buyimg.com/da/g15/M03/0F/18/rBEhWFJeTdgIAAAAAADnzmiSQTQAAENfwKFvmMAAOfm066.jpg" />
+					<a class="remove-item " href="javascript:;" style="display: none;color: red;font-size: 18px;;">删除</a>
+				</div>
+			</li>
+			<li class="ui-switchable-panel">
+				<div style=";height: 188px;font-size: 22px;color: red;">
+					<img style="width: 290px;height:158px;" src="http://img11.360buyimg.com/da/g14/M00/15/15/rBEhVlJeCegIAAAAAADhV3zKug8AAEO1AGW8mYAAOFv185.jpg" />
+					<a class="remove-item " href="javascript:;" style="display: none;color: red;font-size: 18px;;">删除</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	seajs.use(['jdf/1.0.0/ui/switchable/1.0.0/switchable'],function(){
+		//关键代码
+		var slider = $('#slider').switchable({
+			type:'slider',
+			mainClass:'ui-switchable-panel',
+			contentClass:'ui-switchable-panel-main',
+			seamlessLoop:true,
+			speed:600,
+			step:2,
+			hasPage:true,
+			autoPlay:true
+		});
+
+		//演示代码 开始
+		var idx = 0;
+		var dtempTpl = '<li class="ui-switchable-panel"><div>\
+				${idx}\
+				<a class="remove-item " href="javascript:;" style="display: none;color: red;font-size: 18px;;">删除</a>\
+		</div></div>';
+	
+		$('.ui-switchable-panel').live('mouseenter', function(){
+			$('.remove-item',$(this)).show();
+		}).live('mouseleave', function(){
+			$('.remove-item',$(this)).hide();
+		});
+		//演示代码 结束
+		//演示代码
+		$('.add-item').live('click',function(){
+			//关键代码 
+			slider.update(function(content){
+				//演示代码
+				content.append(dtempTpl.replace(/\$\{idx\}/g, 'new-'+idx));
+				idx++;
+			});
+		});
+		//演示代码
+		$('.remove-item').live('click',function(){
+			//关键代码 
+			slider.update($(this), function(content, index, init){
+				//演示代码
+				$(this).remove();
+			});
+		});
+	
+	});
+</script>
+</body>
+</html>
+

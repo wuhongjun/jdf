@@ -1,0 +1,114 @@
+/*#service*/
+
+#service-2014{
+	margin-bottom:20px;
+	dl{
+		float:left;
+		width:222px;
+		&.fore5{
+			width:100px;
+		}
+	}
+	dt{
+		padding:6px 0;
+		font:400 16px/24px "microsoft yahei";
+	}
+	dd{
+		line-height:20px;
+	}
+	.slogen{
+		position: relative;
+		height:54px;
+		padding:20px 0;
+		margin-bottom:14px;
+		background:#F5F5F5;
+		text-align:center;
+		.item{
+			display:inline-block;
+			position:absolute;
+			left: 50%;
+			top:20px;
+			width:245px;
+			height:54px;
+			text-align:left;
+			vertical-align:middle;
+			font:400 18px/50px "microsoft yahei";
+			i{
+				display:block;
+				position:absolute;
+				top:0;
+				left:10px;
+				width:220px;
+				height:54px;
+				background-repeat:no-repeat;
+				background-position:0 0;
+			}
+			b{
+				padding:0 10px;
+				font-size:24px;
+				color:#C81623;
+			}
+
+		}
+		.fore1{margin-left: -490px;
+			i{
+				background-image:url(i/service_items_1.png);				
+			}
+		}
+		.fore2{margin-left: -245px;
+			i{
+				background-image:url(i/service_items_2.png);
+			}
+		}
+		.fore3{margin-left: 0;
+			i{
+				background-image:url(i/service_items_3.png);
+			}
+		}
+		.fore4{margin-left: 245px;
+			i{
+				background-image:url(i/service_items_4.png);
+			}
+		}
+	}
+
+}
+
+#coverage{
+	float:right;
+	width:310px;
+	height:168px;
+	background:url(http://misc.360buyimg.com/product/skin/2013/i/20130330B_1.png) no-repeat 60px -131px;
+	.dt{
+		padding:6px 40px 15px 80px;
+		font:400 16px/24px "microsoft yahei";	
+	}
+	.dd{
+		padding:0 40px 15px 80px;
+	}
+}
+
+
+.root61{
+	#service-2014{
+		dl{
+			width:275px;
+			&.fore5{
+				width:100px;
+			}
+		}
+		.slogen{
+			.item{
+				width:302px;
+			}
+			.fore1{margin-left: -604px; 
+			}
+			.fore2{margin-left: -304px; 
+			}
+			.fore3{margin-left: 0;
+			}
+			.fore4{margin-left: 304px; 
+			}
+		}
+	}
+}

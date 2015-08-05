@@ -1,0 +1,86 @@
+			<li class="fore3 dorpdown" id="ttbar-myjd">
+				<div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>
+                    <a href="http://home.jd.com/">我的京东</a>
+                </div>
+				<div class="dd dorpdown-layer">
+                    <div class="dd-spacer"></div>
+                    <div class="dd-inner">
+                        <span class="loading"></span>
+                    </div>
+                </div>
+            </li>
+
+			<!-- 
+			<li class="fore3 dorpdown" id="ttbar-myjd">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>
+                    <a href="#">我的京东</a>
+                </div>
+                <div class="dd dorpdown-layer">
+                    <div class="dd-spacer"></div>
+                	<div class="userinfo">
+                		<div class="u-pic"><img src="" width="60px" height="60px" /></div>
+                        <div class="u-name">冰山上的来客文字够不够</div>
+                		<div class="u-extra">
+                            <a href="#">优惠券<span id="num-ticket">2</span></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">消息<span id="num-tip">2</span></a>
+                        </div>
+                	</div>
+                	<div class="orderlist"></div>
+                	<div class="otherlist">
+                		<div class="fore1">
+                			<div class="item">
+                				<a href="http://order.jd.com/center/list.action" clstag="" target="_blank">待处理订单<span id="num-unfinishedorder"></span></a>
+                			</div>
+                			<div class="item">
+                				<a href="http://jd2008.jd.com/user_spzx.aspx" clstag="" target="_blank">咨询回复<span id="num-consultation"></span></a>
+                			</div>
+                			<div class="item">
+                				<a href="http://t.jd.com/product/followProductList.action?isReduce=true" clstag="" target="_blank">降价商品<span id="num-reduction"></span></a>
+                			</div>
+                			<div class="item">
+                				<a href="http://myjd.jd.com/repair/orderlist.action" clstag="" target="_blank">返修退换货</a>
+                			</div>
+                			<div class="item">
+                				<a href="http://quan.jd.com/user_quan.action" clstag="" target="_blank">优惠券<span id="num-ticket"></span></a>
+                			</div>
+                		</div>
+                		<div class="fore2">
+                			<div class="item">
+                				<a href="http://t.jd.com/home/follow" clstag="" target="_blank">我的关注&nbsp;&gt;</a>
+                			</div>
+                			<div class="item">
+                				<a href="http://bean.jd.com/myJingBean/list" clstag="" target="_blank">我的京豆&nbsp;&gt;</a>
+                			</div>
+                			<div class="item">
+                				<a href="http://trade.jr.jd.com/centre/browse.action" clstag="" target="_blank">我的理财&nbsp;&gt;</a>
+                			</div>
+                			<div class="item">
+                				<a href="http://baitiao.jd.com/creditUser/list" clstag="" target="_blank">我的白条&nbsp;&gt;</a>
+                			</div>
+                			<div class="item">
+                				<a href="http://baitiao.jd.com/jinCai/record" clstag="" target="_blank">京东金采&nbsp;&gt;</a>
+                			</div>
+                		</div>
+                	</div>
+                	<div class="viewlist">
+                		<div class="smt">
+                			<h4>最近浏览</h4>
+                			<span class="extra">
+                                <a target="_blank" href="http://my.jd.com/history/list.html">更多&nbsp;&gt;</a>
+                            </span>
+                		</div>
+                		<div class="smc">
+            				<div class="item">
+            					<a title="ThinkPad E431(6277ALC) 14英寸笔记本电脑（i3-3110 4G 500G  1G独显 蓝牙摄像头 WIN8 ）" target="_blank" href="http://item.jd.com/987852.html"><img width="50" height="50" alt="ThinkPad E431(6277ALC) 14英寸笔记本电脑（i3-3110 4G 500G  1G独显 蓝牙摄像头 WIN8 ）" src="http://img12.360buyimg.com/n5/g15/M00/13/1E/rBEhWFJ4sNUIAAAAAAHJY7c4pHkAAFBugBwkz0AAcl7615.jpg"></a>
+            				</div>
+            				<div class="item">
+            					<a title="微星（msi）GE60 2PF-667XCN 15.6英寸游戏笔记本本 （ i7-4710HQ 8G 1T+128G 860M 2G 多彩背光 黑" target="_blank" href="http://item.jd.com/1274172.html"><img width="50" height="50" alt="微星（msi）GE60 2PF-667XCN 15.6英寸游戏笔记本本 （ i7-4710HQ 8G 1T+128G 860M 2G 多彩背光 黑" src="http://img12.360buyimg.com/n5/jfs/t655/63/306099326/90613/37225f57/545c830eNc494c09f.jpg"></a>
+            				</div>
+            				<div class="item">
+            					<a title="BIOTHERM碧欧泉男士净肤细致洁面膏125ml" target="_blank" href="http://item.jd.com/340363.html"><img width="50" height="50" alt="BIOTHERM碧欧泉男士净肤细致洁面膏125ml" src="http://img13.360buyimg.com/n5/g5/M02/13/02/rBEDik_1dWUIAAAAAADVq2vkpEIAADujwD2KA4AANXD066.jpg"></a>
+            				</div>
+                		</div>
+                	</div>
+                </div>
+            </li> -->

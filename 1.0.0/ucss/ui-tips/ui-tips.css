@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "rei";
+  src: url("fonts/rei.eot");
+  /* IE9 */
+  src: url("fonts/rei.eot#iefix") format("embedded-opentype"), url("fonts/rei.woff") format("woff"), url("fonts/rei.ttf") format("truetype"), url("fonts/rei.svg#rei") format("svg");
+  /* iOS 4.1- */ }
+
+.ui-tips-iconfont {
+  font-family: "rei";
+  font-size: 26px;
+  font-style: normal;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 20px;
+  top: 5px; }
+
+.ui-tips {
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #eee; }
+
+.ui-tips-bd {
+  padding: 15px 10px 15px 55px;
+  font-size: 14px; }

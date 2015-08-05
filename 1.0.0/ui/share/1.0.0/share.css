@@ -1,0 +1,20 @@
+.ui-share a{display:inline-block;*display:inline;*zoom:1;width:25px;height:16px;background:url(share.png) no-repeat;}
+.ui-share .qzone{background-position:0 0;}
+.ui-share .sinaweibo{background-position:0 -40px;}
+.ui-share .renren{background-position:0 -80px;}
+.ui-share .qqweibo{background-position:0 -120px;}
+.ui-share .kaixin001{background-position:0 -160px;}
+.ui-share .douban{background-position:0 -200px;}
+.ui-share .sohuweibo{background-position:0 -240px;}
+.ui-share .weibo163{background-position:0 -280px;}
+.ui-share .qq{background-position:0 -320px;}
+.ui-share .yixin{background-position:0 -360px;}
+.ui-share .weixin{background-position: 0 -400px;}
+
+.weixin-qrcode{display: none;width: 220px;position: absolute; left: 50%; top: 50%;margin-left: -100px; margin-top: -200px; padding: 10px;border: 1px solid #ccc; background: #fff;}
+.weixin-qrcode .msg{color: #666; padding-top: 10px;}
+.qrcode-head{margin-bottom: 10px;}
+.qrcode-head h3{font-size: 12px; color: #333;}
+.qrcode-close{float: right; font-size: 20px;}
+.qrcode-close:hover{text-decoration: none;}
+

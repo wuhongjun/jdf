@@ -1,0 +1,13 @@
+.ui-box {
+  border: 1px solid #ddd;
+  border-top: 2px solid #999;
+  background-color: #fff; }
+
+.ui-box .ui-box-hd {
+  background-color: #f7f7f7; }
+
+.ui-box-nobg .ui-box-hd {
+  background-color: #fff; }
+
+.ui-box-weak {
+  border-top: 1px solid #ddd; }

@@ -1,0 +1,12 @@
+.ui-loading {
+  width: 103px;
+  text-align: center;
+  margin: 0 auto;
+  color: #999; }
+  .ui-loading i {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 43px;
+    height: 30px;
+    background: url(loading-jd.gif) no-repeat; }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>animate css3</title>
+<link href="http://misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="http://misc.360buyimg.com/jdf/1.0.0/ui/anim/1.0.0/anim.css">
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<style type="text/css">
+	/* 测试样式 */
+	.ui-switchable-body{position:relative;height:370px;overflow:hidden;}
+	.ui-switchable-panel-main{position:absolute;top:0;left:0;}
+	.ui-switchable-panel{width:100%;height:370px;left: 0px;  }
+
+	.a1{position:absolute;left:10%;top:10px;}
+	.a2{position:absolute;left:50%;}
+</style>
+
+</head>
+<body>
+<h2>动画+css3</h2>
+
+<br />
+<div id="animate">
+	<div>
+		<a class="ui-switchable-item" href="javascript:;">1</a>
+		<a class="ui-switchable-item" href="javascript:;">2</a>
+		<a class="ui-switchable-item" href="javascript:;">3</a>
+		<a class="ui-switchable-item" href="javascript:;">4</a>
+		<a class="ui-switchable-item" href="javascript:;">5</a>
+	</div>
+	<div>
+		<a href="javascript:void(0)" class="ui-switchable-prev">上一页</a>
+		<a href="javascript:void(0)" class="ui-switchable-next">下一页</a>
+	</div>
+	<div class="ui-switchable-body">
+		<div class="ui-switchable-panel-main">
+			<div class="ui-switchable-panel" style="background-color:#FBC85C;">
+				<img class="a1" src="http://img11.360buyimg.com/da/g15/M04/1B/0A/rBEhWFKllHwIAAAAAAA9qKbANWwAAGjAAJ5J_0AAD3A469.jpg" width="340" height="260"
+					 id="img111"
+					 data-animate=""
+					 data-type="swing"
+					 data-delay="300"
+						>
+				<img class="a2" src="http://img13.360buyimg.com/da/g14/M0A/06/01/rBEhV1KllIAIAAAAAACRdhkvFOEAAGrBgE0z2AAAJGO673.jpg" width="300" height="370"
+					 data-animate=""
+					 data-type="fadeInUp"
+					 data-delay="900"
+						>
+			</div>
+			<div class="ui-switchable-panel" style="display:none;background-color:#B0CF68;">
+				<img class="a1" src="http://img10.360buyimg.com/da/g13/M0A/0A/17/rBEhUlKlfr4IAAAAAABVfKlb-5AAAGkFwG0a3UAAFWU697.jpg" width="340" height="260"
+					 data-animate=""
+					 data-type="fadeInLeftBig"
+					 data-delay="300"
+						>
+				<img class="a2" src="http://img13.360buyimg.com/da/g13/M0A/0A/17/rBEhU1KlfsEIAAAAAAAvrC8E294AAGkFwLHKbAAAC_E073.jpg" width="300" height="370"
+					 data-animate=""
+					 data-type="fadeInRightBig"
+					 data-delay="1200"
+						>
+			</div>
+			<div class="ui-switchable-panel" style="display:none;background-color:#E57979;">
+				<img class="a1" src="http://img10.360buyimg.com/da/g15/M05/1B/09/rBEhWFKlfuQIAAAAAACF-FwUUycAAGimAOPnyYAAIYQ191.jpg" width="340" height="260"
+					 data-animate=""
+					 data-type="bounceIn"
+					 data-delay="0"
+						>
+				<img class="a2" src="http://img12.360buyimg.com/da/g15/M06/1B/09/rBEhWlKlfuoIAAAAAADAG5V1xTYAAGimQCe0v4AAMAz119.jpg" width="300" height="370"
+					 data-animate=""
+					 data-type="bounceIn"
+					 data-delay="0"
+						>
+			</div>
+			<div class="ui-switchable-panel" style="display:none;background-color:#FBA75C;">
+				<img class="a1" src="http://img13.360buyimg.com/da/g13/M07/0B/0D/rBEhU1KpLy8IAAAAAACJ-3OYWxQAAGsjQHG48AAAIoT227.jpg" width="340" height="260"
+					 data-animate=""
+					 data-type="bounceIn"
+					 data-delay="300"
+						>
+				<img class="a2" src="http://img12.360buyimg.com/da/g13/M07/0B/0D/rBEhUlKpLzMIAAAAAACS0o8mvKsAAGsjQKML_AAAJLq812.jpg" width="300" height="370"
+					 data-animate=""
+					 data-type="bounceDown"
+					 data-delay="900"
+						>
+			</div>
+			<div class="ui-switchable-panel" style="display:none;background-color: rgb(227, 119, 119)">
+				<img class="a1" src="http://img12.360buyimg.com/da/g14/M08/08/08/rBEhV1KyqxQIAAAAAAB7wXzMHfAAAHGqgAAAAAAAHvZ535.jpg" width="340" height="260"
+					 data-animate=""
+					 data-type="sunrise"
+					 data-delay="300"
+						>
+				<img class="a2" src="http://img10.360buyimg.com/da/g14/M08/08/08/rBEhVVKyqxgIAAAAAABxlLjuxb4AAHGqgDQmZMAAHGs331.jpg" width="300" height="370"
+					 data-animate=""
+					 data-type="fadeInDownBig"
+					 data-delay="600"
+						>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+seajs.use(['jdf/1.0.0/ui/switchable/1.0.0/switchable','jdf/1.0.0/ui/easing/1.0.0/easing','jdf/1.0.0/ui/transform/1.0.0/transform','jdf/1.0.0/ui/anim/1.0.0/anim'],function(){
+	var anim = $('#animate').anim();
+
+	$('#animate').switchable({
+		type:'focus',
+		delay: 300,
+		speed: 500,
+		hasPage:true,
+		callback:function(index){
+			var item  = this.main.eq(index);
+			anim.trigger(item);
+		}
+	});
+});
+</script>
+
+</body>
+</html>

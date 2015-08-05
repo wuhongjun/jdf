@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>拖拽列表</title>
+
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+
+<style type="text/css">
+*{margin: 0;padding: 0;}
+/* 测试样式 */
+.ui-drag2{top:20px;padding:5px 10px;background-color:#f1f1f1;cursor:move;width:78px;}
+
+.ui-drag{width:500px;margin-left:50px;}
+.ui-drag-item,
+.ui-drag-hidden{width:200px;margin-bottom:10px;padding:5px 10px;background-color:#f1f1f1;border:1px solid #fff;}
+.ui-drag-hidden{border:1px dashed #ccc;background-color:#fff;}
+.ui-drag-selected{border:1px solid #ccc;}
+
+.left{float: left; padding: 10px;background-color: #ccc;}
+.right{float: right; padding: 10px;background-color: #ddd;}
+/*
+.ui-drag-item2{height:300px;}
+.ui-drag-item3{height:100px;}
+.ui-drag-item4{height:60px;}
+.ui-drag-item3{height:150px;}
+*/
+</style>
+</head>
+
+<body>
+<br/>
+<br/>
+<!-- <h2>拖拽列表</h2> -->
+<!-- <div class="ui-drag2" id="drag2">
+	Drag this div
+</div>	 -->
+<!-- <br />
+<br />
+<br />
+ -->
+<div id="drag" class="ui-drag">
+	<div class="main">
+		<div class="left">
+			<div class="ui-drag-item ui-drag-item1">Item 1</div>
+			<div class="ui-drag-item ui-drag-item2">Item 2</div>
+			<div class="ui-drag-item ui-drag-item3">Item 3</div>
+		</div>
+		<div class="right">
+			<div class="ui-drag-item ui-drag-item4">Item 4</div>
+			<div class="ui-drag-item ui-drag-item5">Item 5</div>
+			<div class="ui-drag-item ui-drag-item6">Item 6</div>
+			<div class="ui-drag-item ui-drag-item7">Item 7</div>
+		</div>
+	</div>
+	
+</div>
+
+<script src="sortable.js" type="text/javascript"></script>
+
+
+<ul id="thelist"></ul>
+
+<script type="text/javascript">
+	//填充页面
+    for(var i = 0, html = []; i < 50; i++) {html.push('<li>第'+i+'行</li>');}
+    //$('#thelist').html(html.join(''));
+	
+	//创建组件
+	// $('#drag2').drag();
+</script>
+
+</body>
+</html>

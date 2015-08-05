@@ -1,0 +1,326 @@
+ #shortcut-2014{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	background:#F1F1F1;
+	.w{
+		background:#F1F1F1;
+	}
+
+	li{
+		float:left;
+		height:30px;
+		padding:0 2px;
+		&#ttbar-navs{
+			padding:0 1px 0 2px;
+			&.hover,
+			&:hover{
+				padding:0 0 0 1px;
+			}
+
+		}
+		&.dorpdown{
+			z-index:13;
+			&:hover{
+				padding:0 1px;
+				.dt{
+					background:#fff;
+					border:solid #ddd;
+					border-width:0 1px;
+				}
+			}
+		}
+		&.hover{
+			padding:0 1px;
+			.dt{
+				background:#fff;
+				border:solid #ddd;
+				border-width:0 1px;
+			}
+		}
+		&.spacer{
+			width:1px;
+			height:12px;
+			margin-top:9px;
+			padding:0;
+			background:#ddd;
+			overflow:hidden;
+		}
+	}
+
+
+	.dt{
+		float:left;
+		padding:0 8px;
+	}
+
+	.dd{
+		line-height:24px;
+	}
+
+	.loading{
+		display:block;
+		height:50px;
+		background:url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/loading.gif) no-repeat center center;
+	}
+
+	.dorpdown-layer{
+		top:30px;
+		background:#fff;
+		border: 1px solid #ddd;
+		/*box-shadow: 0 0 2px rgba(0,0,0,.1);*/
+		*left:1px;/*IE6,IE7 hack */
+	}
+
+	.ci-right{
+		top:12px;
+		right:8px;
+		height:7px;
+		overflow:hidden;
+		font:400 15px/15px consolas;
+		color:#6A6A6A;
+		transition:transform .1s ease-in 0s;
+		-webkit-transition:-webkit-transform .1s ease-in 0s;
+		s{
+			position:relative;
+			top:-7px;
+			text-decoration:none;
+		}
+	}
+
+	li:hover{
+		.ci-right{
+			transform:rotate(180deg);
+			-webkit-transform:rotate(180deg);
+		}
+	}
+
+	.dd-spacer{
+		position:absolute;
+		top:-7px;
+		height:10px;
+		background:#fff;
+		overflow:hidden;
+	}
+	
+	/* 文字标红 */
+	.style-red {
+	  color: #C81623;
+	}
+
+	/* 京东首页icon */
+	#ttbar-home{
+		padding-left:20px;
+		background:url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) no-repeat 0 -136px;
+	}
+
+	#ttbar-mycity{
+		padding-left:0;
+		.dt{
+			padding:0 25px 0 10px;
+		}
+		&:hover{
+			.dt{
+				padding:0 24px 0 9px;
+			}
+		}
+		.dd{
+			width:301px;
+			padding:10px 0 10px 10px;
+		}
+		.dorpdown-layer{
+			*left:0px;/*IE6,IE7 hack*/
+		}
+		.item{
+			float:left;
+			width:60px;
+			padding:2px 0;
+			a{
+				&:hover{
+					background:#F4F4F4;
+				}
+				&.selected{
+					background:#C81623;
+					color:#fff;
+				}
+				float:left;
+				padding:0 8px;
+			}
+		}
+		.dd-spacer{
+			left:0;
+			width:93px;
+			_width:95px;/*IE6,IE7 hack*/
+		}
+
+		.dd-spacer-extend{
+			width:105px;
+			_width:107px;
+		}
+	}
+
+
+	#ttbar-login{
+		margin-right:10px;
+		.link-login{font-family:"verdana,宋体";}
+	}
+
+
+	#ttbar-apps{
+		.dt{
+			padding-left:25px;
+			padding-right: 25px;
+			.ci-left{
+				top:5px;
+				left:7px;
+				width:15px;
+				height:20px;
+				/*background:url(i/apps.png) no-repeat 0 0;*/
+				background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 0 no-repeat;
+			}
+		}
+		.dd{
+			width:250px;
+			a{
+				display:block;
+				position:absolute;
+				width:56px;
+				height:44px;
+				overflow:hidden;
+				text-indent:-500px;
+			}
+			.link{ width:100px; height: 20px; overflow: hidden;}
+			.link1,.link2,.link3 { left: 92px; top: 6px; background-position: 0px -44px;}
+			.link2{ top:26px; }
+			.link3 { top:104px; background-position: -1px -66px;}
+			.jdapp-ipad, .wyapp-ipad{
+			width: 45px;}
+		}
+		.dd-inner{
+			position:relative;
+			width:250px;
+			height:195px;
+			overflow: hidden;
+		}
+		.jdapp-ios, .wyapp-ios{
+			top:46px;
+			left:92px;
+			&:hover { background-position: 3px -1px;}
+		}
+		.jdapp-android, .wyapp-android{
+			top:46px;
+			left:147px;
+			&:hover { background-position: -52px -1px;}
+		}
+		.jdapp-ipad, .wyapp-ipad{
+			width: 45px;
+			top:46px;
+			left:202px;
+			&:hover { background-position: -107px -1px;}
+		}
+		.wyapp-ios{
+			top:143px;
+		}
+		.wyapp-android{
+			top:143px;
+		}
+		.wyapp-ipad{
+			top:143px;
+		}
+		.dd-spacer{
+			left:0;
+			width:98px;
+		}
+	}
+	
+	#ttbar-apps.hover .dt  .ci-left{
+		/*background:url(i/apps-hover.png) no-repeat 0 0;*/
+		background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 -25px no-repeat;
+	}
+
+	#ttbar-atte,
+	#ttbar-serv{
+		.dt{
+			width:49px;
+			padding-right:25px;
+		}
+		.dd{
+			width:82px;
+			padding-bottom:8px;
+		}
+		.item{
+			padding-left:15px;
+		}
+		.dd-spacer{
+			left:0;
+			width:82px;
+		}
+	}
+
+
+	#ttbar-navs{
+		.dt{
+			width:49px;
+			padding-right:25px;
+		}
+		.dd{
+			right:0px;
+			width:988px;
+			padding:20px 0 16px;
+			*left:auto;/*IE6,IE7*/
+			_right:-1px;/*IE6*/
+		}
+		.dd-inner{
+
+		}
+		dl{
+			&.fore1{
+				border-left:none;
+				width:301px;
+			}
+			float:left;
+			width:201px;
+			padding-left:20px;
+			border-left:1px solid #ddd;
+		}
+		dt{
+			font-size:14px;
+			font-weight:bold;
+			margin-bottom:6px;
+		}
+		.item{
+			float:left;
+			width:100px;
+		}
+		.dd-spacer{
+			right:0px;
+			width:82px;
+		}
+	}
+
+	.hover .dorpdown-layer{
+		-webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+}
+
+.root61{
+	#shortcut-2014{
+		 #ttbar-navs{
+			.dd{
+				width:1210px;
+			}
+			.fore2{
+				display:block;
+			}
+			dl{
+				&.fore1{
+					width:347px;
+				}
+				width:259px;
+			}
+			.item{
+				width:86px;
+			}
+		}
+	}
+}

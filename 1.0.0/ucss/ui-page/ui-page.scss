@@ -1,0 +1,115 @@
+@import "../ui-lib/ui-lib";
+
+$curr-color: #e33b3d;
+.ui-pre-page, .ui-next-page{
+	@include inline-block;
+	@include border-radius(2px);
+	@include gradient-vertical(#f7f7f7, #f3f2f2);
+
+	font-size: 14px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #ddd;
+	padding: 0 1em;
+	cursor: pointer;
+	vertical-align: middle;
+
+	i{
+		color: #b2b2b2;
+		margin-right: 2px;
+		font-weight: bold;
+	}
+
+	&:hover{
+		@include box-shadow(1px, 1px, 2px, 0.1);
+		color: $curr-color;
+		i{
+			color: $curr-color;
+		}
+	}
+}
+
+.ui-next-page{
+	margin-left: 3px;
+	i{
+		margin: 0 0 0 2px;
+	}
+}
+
+.ui-page-num{
+	@include border-radius(2px);
+	@include inline-block;
+	@include gradient-vertical(#f7f7f7, #f3f2f2);
+
+	height: 38px;
+	line-height: 38px;
+	padding: 0 1.2em;
+	border: 1px solid #ddd;
+	margin-left: 3px;;
+	font-size: 14px;
+	vertical-align: middle;
+
+	&:hover{
+		text-decoration: none;
+		@include box-shadow(1px, 2px, 2px, 0.1);
+		color: $curr-color;
+	}
+}
+
+.ui-total-page{
+	margin: 0 10px;
+	font-size: 14px;
+}
+
+.ui-page-skip{
+	font-size: 14px;
+
+	input{
+		width: 30px;
+		padding: 0 5px;
+	}
+}
+
+.ui-page-omit{
+	margin-left: 3px;
+	color: #666;
+}
+
+.ui-page{
+	.ui-page-curr{
+		color: $curr-color;
+		font-weight: 700;
+		border: 0;
+		cursor: default;
+		background: none;
+		&:hover{
+			@include box-shadow(0, 0, 0, 0);
+		}
+	}
+
+	.ui-page-cancel{
+		border-color: #ddd;
+		color: #ccc;
+		cursor: not-allowed;
+
+		&:hover{
+			@include box-shadow(0, 0, 0, 0);
+		}
+
+		i{
+			color: #ccc;
+		}
+	}
+}
+
+.ui-page-small{
+	.ui-pre-page, .ui-next-page, a{
+		font-size: 12px;
+		height: 28px;
+		line-height: 28px;
+	}
+	.ui-total-page, .ui-page-skip{
+		font-size: 12px;
+	}
+}
+
