@@ -1,0 +1,359 @@
+@mixin r-corners ($r...){
+	-webkit-border-radius: $r;
+	-moz-border-radius: $r;
+	border-radius: $r;
+}
+.qa-progress-new{
+	width:700px;
+	margin:0 auto 10px;
+	padding:50px;
+	overflow:hidden;
+	.node,.proce{
+		position:relative;
+		float:left;
+		i{
+			display:inline-block;*display:inline;*zoom:1;
+			background-image:url(i/icon-progress.jpg)
+		}
+	}
+	.node{
+		width:27px;
+		height:27px;
+		margin-top: -4px;
+		
+		i{
+			width:27px;
+			height:27px;
+		}
+		span.txt{
+			position:absolute;
+			top:41px;
+			
+			left:-40px;
+			display:block;
+			width:110px;
+			height:16px;
+			font:12px/16px 'simsun';
+			color:#7abd53;
+			text-align:center;
+			overflow:hidden;
+		}
+		&.wait span.txt{
+			color:#a9a9a9;
+		}
+		.info{
+			float:left;
+			height:18px;
+			font:12px/18px 'simsun';
+			color:#fff;
+			position:absolute;
+			top:-29px;
+			
+			margin-bottom: 6px;
+			clear:both;
+			width:125px;
+			text-align:center;
+			left:-54px;
+			b{
+				display:inline-block;*display:inline;*zoom:1;
+				width:0;
+				height:0;
+				border-width:6px;
+				overflow:hidden;
+				border-style:solid dashed dashed dashed;
+				border-color:#7bbc56 transparent transparent transparent;
+				position:absolute;
+				bottom:-11px;
+				left:47%;
+			}
+			.con{
+				background-color:#7cbd55;
+				display:inline-block;*display:inline;*zoom:1;
+				width:auto;
+				height:18px;
+				line-height: 18px;
+				padding:0 5px;
+				@include r-corners(10px);
+			}
+		}
+		.time{
+			color:#aaa;
+			height:36px;
+			float:left;
+			font:12px/18px 'simsun';
+			position:absolute;
+			margin-bottom: 6px;
+			clear:both;
+			width:125px;
+			text-align:center;
+			left:-42px;	
+		}
+		&.wait .time{
+			top:-46px;
+		}
+		&.ready .time{
+			top:66px;
+		}
+
+	}
+	.ready i.icon-node{
+		background-position:-223px -33px;
+	}
+	.curr {
+		width:48px;
+		height:48px;
+		margin-top: -14px;
+		.info{
+			left:-40px;
+		}
+		span.txt{
+			top:51px;
+			left:-30px;
+		}
+		i.icon-node{
+			background-image:url(i/progress-logo.png);
+			width:48px;
+			height:48px;
+			&.licon-node-01{
+				background-position:0 0;
+			}
+			&.licon-node-02{
+				background-position:0 -48px*1;
+			}
+			&.licon-node-03{
+				background-position:0 -48px*2;
+			}
+			&.licon-node-04{
+				background-position:0 -48px*3;
+			}
+			&.licon-node-05{
+				background-position:0 -48px*4;
+			}
+			&.licon-node-06{
+				background-position:0 -48px*5;
+			}
+			&.licon-node-07{
+				background-position:0 -48px*6;
+			}
+			&.licon-node-08{
+				background-position:0 -48px*7;
+			}
+			&.licon-node-09{
+				background-position:0 -48px*8;
+			}
+			&.licon-node-10{
+				background-position:0 -48px*9;
+			}
+			&.licon-node-11{
+				background-position:0 -48px*10;
+			}
+			&.licon-node-12{
+				background-position:0 -48px*11;
+			}
+			&.licon-node-13{
+				background-position:0 -48px*12;
+			}
+			&.licon-node-14{
+				background-position:0 -48px*13;
+			}
+		}
+	}
+	.wait i.icon-node{
+		background-position:-223px 0;
+	}
+	.proce{
+		width:100px;
+		height:17px;
+		z-index: 2;
+		i{
+			position:absolute;
+			left:-1px;
+			width:102px;
+			height:14px;
+		}
+		span.text{
+			color:#a9a9a9;
+			height:18px;
+			font:12px/18px 'simsun';
+			display:block;
+			text-align:center;
+			width:136px;
+			position:absolute;
+			top:-18px;
+			left:0;
+		}
+		.info{
+			float:left;
+			height:18px;
+			font:12px/18px 'simsun';
+			color:#fff;
+			position:absolute;
+			top:-22px;
+			margin-bottom:6px;
+			clear:both;
+			width:125px;
+			text-align:center;
+			b{
+				display:inline-block;*display:inline;*zoom:1;
+				width:0;
+				height:0;
+				border-width:6px;
+				overflow:hidden;
+				border-style:solid dashed dashed dashed;
+				border-color:#7bbc56 transparent transparent transparent;
+				position:absolute;
+				bottom:-11px;
+				left:47%;
+			}
+			.con{
+				background-color:#7cbd55;
+				display:inline-block;
+				width:auto;
+				height:18px;
+				line-height:18px;
+				line-height:18px;
+				padding:0 5px;
+				max-width: 115px;
+				white-space: nowrap;
+				overflow: hidden;
+				@include r-corners(10px);
+			}
+		}
+	}
+	.wait .info .con {
+		background: #e8e7e5;
+		color: #aaa
+	}
+	.wait .info b {
+		border-color: #e8e7e5 transparent transparent
+	}
+	.ready i.icon-proce{
+		background-position:0 -71px;
+	}
+	.wait i.icon-proce{
+		background-position:0 -5px;
+	}
+	.doing i.icon-proce{
+		background-position:0 -37px;
+	}
+	.pro-long{
+		width:227px;
+		clear:both;
+		i{
+			width:229px;
+		}
+		span.text{
+			width:227px;
+		}
+	}
+	.ready i.icon-proce-l{background-position:0 -104px;}
+	.doing i.icon-proce-l{background-position:0 -173px;}
+	.wait i.icon-proce-l{background-position:0 -139px;}
+
+	.proce .pro-1-4{left:-16px;}
+	.proce .pro-2-4{left:40px;}
+	.proce .pro-3-4{left:115px;}
+	.proce .pro-4-4{left:115px;}
+
+	.double-deck{
+		float:left;
+		position:relative;
+		width:254px;
+		margin-top:-22px;
+		padding: 0 86px 0 89px;
+		height: 60px;
+		z-index: 3;
+		overflow: visible;
+		.l-circle,.r-circle{
+			position:absolute;
+			z-index: 2;
+			width:90px;
+			height:60px;
+			_clear:both;
+			*zoom:1;
+			top:0;
+			
+			background:url(i/icon-progress.jpg);
+		}
+		.l-circle{
+			left:-1px;
+			background-position:0 -197px;
+			&.doing{
+				background-position:-110px -197px;
+			}
+			&.down-ready {
+				background-position: 0 -516px
+			}
+		}
+		.r-circle{
+			right:-3px;
+			background-position:-110px -278px;
+			&.up-doing{
+				background-position:-110px -435px;
+			}
+			&.down-doing{
+				background-position:0 -358px;
+			}
+			&.up-ready{
+				background-position:-110px -357px;
+			}
+			&.down-ready {
+				background-position: -110px -515px
+			}
+			&.ready{
+				background-position:0 -277px;
+			}
+		}
+		.ready i.icon-proce{
+		background-position:-112px -71px;
+		}
+		.wait i.icon-proce{
+			background-position:-112px -4px;
+		}
+		.doing i.icon-proce{
+			background-position:-112px -36px;
+		}
+		&.doing .ready i.icon-proce{
+			background-position:-112px -71px;;
+		}
+		&.wait{
+			.l-circle{
+				left:-1px;
+				background-position:0 -434px;
+			}
+		
+		}
+
+		.user-check,.jd-check{
+			float:left;
+			clear:both;
+			height:49px;
+			width:100%;
+		}
+		.user-check{
+			margin-top:-1px;
+			 .node span.txt{
+			 	top:-20px;
+			 }
+			 .wait i.icon-proce{
+			 	background-position: -112px -4px
+			 }
+		}
+		.jd-check{
+			height:24px;
+			margin-top: -3px;
+		}
+
+
+	}
+	
+	.double-deck 
+	.check-short{width:155px;}
+}
+
+.qa-new-w1{width:175px;}
+.qa-new-w2{width:302px;}
+.qa-new-w3{width:429px;}
+.qa-new-w4{width:556px;}
+.qa-new-dw4{width:736px;}
+.qa-new-w5{width:683px;}

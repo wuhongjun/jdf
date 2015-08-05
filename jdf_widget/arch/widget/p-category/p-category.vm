@@ -1,0 +1,38 @@
+<h2>类目 p-category</h2>
+
+<div id="$id" class="p-category">
+    <div class="menu">
+    #set( $arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] )
+    #set( $plus = "x" )
+    #foreach( $item in $arr )
+        #if ( $item <= $menuCount )
+        <div class="ui-switchable-menu item fore$item">
+            <i class="fore$item"></i>
+            <h3><a href="#none">分类标题</a><span>></span></h3>
+            <div class="ext">
+                <a href="#" title="子分类1">子分类1</a>
+                <a href="#" title="子分类2">子分类2</a>
+                <a href="#" title="子分类3">子分类3</a>
+            </div>
+            <b></b>
+        </div>
+        #end
+    #end
+    </div>
+    <div class="sub-menu" style="display: none;">
+    #set( $arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] )
+    #foreach( $item in $arr )
+        #if ( $item <= $menuCount )
+        <div class="ui-switchable-submenu item fore$item #if ( $item > 1 ) hide#end">
+            <ul class="i-ext">
+                <li><a href="#" title="分类">分类内容</a></li>
+                <li><a href="#" title="分类">分类$item</a></li>
+            </ul>
+            <div class="i-img">
+                <a href="#none" title="" target="_blank"><img width="$imgWidth" height="$imgHeight" src="http://temp.im/$imgWidth$plus$imgHeight/#ccc/fff" alt="" /></a>
+            </div>
+        </div>
+        #end
+    #end
+    </div>
+</div>

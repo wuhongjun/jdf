@@ -1,0 +1,23 @@
+<h2>商品列表 p-product-list</h2>
+
+<div class="p-product clearfix">
+	<ul>
+		#foreach( $item in $productList )
+			#if ( $velocityCount <= $count )
+			    <li class="fore$velocityCount">
+			    	#set( $skuiUrl = "http://item.jd.com/"+$item.skuid+".html" )
+					<div class="p-img">
+						<a href="$skuiUrl" target="_blank"><img src="$item.src" /></a>
+					</div>
+					<div class="p-name">
+						<a href="$skuiUrl" title="$item.name">$item.name</a>
+					</div>
+					<div class="p-price">
+						<span>15个评论</span>
+						<strong>￥$item.price</strong>
+					</div>
+				</li>
+			#end
+		#end
+	</ul>
+</div>

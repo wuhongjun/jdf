@@ -1,0 +1,36 @@
+{
+    "id": "p-product-list",
+    "count": "5",
+    "productList":[
+        {
+            "skuid": "1182084",
+            "src": "http://img14.360buyimg.com/n7/jfs/t928/119/463195284/105487/2c9058c3/552619a5N15655ba4.jpg",
+            "name": "熊火（bear fire）龙纹鲤钓鱼竿手竿钓鱼杆台钓竿鱼竿碳素超轻硬28调鲤鱼竿5.4米", 
+            "price": "158.00" 
+        }, 
+        {
+            "skuid": "1192645237",
+            "src": "http://img12.360buyimg.com/n7/jfs/t826/148/268813204/262357/898ce3cf/551a5d61N7e2bb389.jpg",
+            "name": "LINING李宁羽毛球鞋男女款运动鞋英雄HERO2TD二代男女鞋子 15年迷彩AYTK057-2 41码=255MM=8", 
+            "price": "299.00" 
+        }, 
+        {
+            "skuid": "1537941",
+            "src": "http://img11.360buyimg.com/n7/jfs/t1564/299/29352850/123101/97b1adc2/555022e3N0e6479c3.jpg",
+            "name": "原始人PE8001J新款3D无烟电烧烤炉 室内红外线不粘电烤盘 韩式家用铁板烤肉机 大号高端神灯式电烤炉", 
+            "price": "358.00" 
+        }, 
+        {
+            "skuid": "1414288",
+            "src": "http://img13.360buyimg.com/n7/jfs/t1063/52/627973599/89854/28dc4cc5/55361554Nca79f0da.jpg",
+            "name": "探路者 户外双人双层帐篷 防风防雨透气 TEDD80631 碧蓝印花", 
+            "price": "229.00" 
+        }, 
+        {
+            "skuid": "1442845433",
+            "src": "http://img13.360buyimg.com/n7/jfs/t988/209/263663100/237700/be0069f9/55112eb4N18fe6e7b.jpg",
+            "name": "耐克NIKE Z00M HYPERREV 2015 EP保罗乔治男子篮球鞋 705371 乳腺癌705371-606 42.5码/9", 
+            "price": "949.00" 
+        }
+    ]
+}

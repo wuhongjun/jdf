@@ -1,0 +1,351 @@
+@import "../../app/css/lib.scss";
+//== @subsection user-info 用户信息 ==//
+
+@mixin btn($h:36px,$sc:#ff7302,$ec:#ff8b2e,$fc:#fff,$fz:16px,$fw:normal,$pd:15px){
+	@include inline-block;
+	height: $h;
+	line-height: $h;
+	@include gradual-change($sc,$ec);
+	@include r-corners(3px);
+	color:$fc;
+	font-size: $fz;
+	font-weight: $fw;
+	padding:0 $pd;
+	vertical-align: middle;
+	cursor:pointer;
+	border:0;
+	&:hover{
+		@include gradual-change($ec,$sc);
+		color: $fc;
+		text-decoration: none;
+	}
+	float:none;
+}
+
+.btn-receive{
+	font-family: arial,"\5B8B\4F53";
+	border:1px solid #ddd;
+	cursor:pointer;
+	margin-top:20px;
+	width:89px;
+	@include r-corners(1px);
+	@include btn(30px,#e74649,#df3134,$fc:#fff,$fz:14px,$fw:normal,$pd:0);
+	@include gradual-change(#df3033,#e74649);
+	&:hover{
+		@include box-shadow(0 1px 1px rgba(0,1,1,0.8));
+		@include gradual-change(#f05356,#eb3c3f);
+	}
+}
+.btn-receive-login{
+	width:auto;
+	padding:0 20px;
+	margin:0 0 0 15px;
+}
+
+
+
+.gift-m{
+	background-color: #fff;
+	border: 1px solid #fed4ae;
+	border-top:none;
+	margin-bottom: 20px;
+	padding:0 20px 15px 20px;
+	.mt{
+		margin-top: 15px;
+		height: 48px;
+		margin-bottom: 13px;
+		border-bottom:2px solid #ff8400;
+		line-height: 48px;
+		em{
+			width: 29px;
+			height: 34px;
+			display: block;
+			float: left;
+			margin-right: 10px;
+			background:url(i/gift_bg.png) no-repeat -48px -115px;
+		}
+		h2{
+			font-weight:normal;
+			font-size:20px;
+			line-height: 34px;
+			@include inline-block;
+			color:#ff6c00;
+		}
+	}
+	.mt30{
+		margin-top:30px;
+	}
+	.intro{
+		h3{
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 30px;
+			color: #333;
+			font-family: $font-yahei;
+		}
+		.def{
+			line-height: 25px;
+			color: #666;
+		}
+	}
+	.gift-list{
+		margin-top: 36px;
+		@include clearfix;
+		.prev{
+			width: 15px;
+			height: 28px;
+			margin-top: 70px;
+			display: block;
+			float: left;
+			background:url(i/gift_bg.png) no-repeat 0 -82px;
+		}
+		.next{
+			width: 15px;
+			height: 28px;
+			margin-top: 70px;
+			display: block;
+			float: right;
+			background:url(i/gift_bg.png) no-repeat -17px -82px;
+		}
+		.disabled.prev{
+			background-position:0 -121px;
+		}
+		.disabled.next{
+			background-position:-17px -121px;
+		}
+		.ui-switchable-panel-main{
+			@include clearfix;
+			_margin-left:-35px;
+		}
+		.ui-switchable-panel{
+			width:150px;
+			margin:0 34px 0 35px;
+			float: left;
+			text-align: center;
+			// _margin-left:17
+		}
+		.gift-list-cont{
+			width:880px;
+			height: 210px;
+			overflow: hidden;
+			float: left;
+			margin-left:10px;
+			_margin-left:5px;
+			// @include clearfix;
+
+		}
+		.gift-circle{
+			width:150px;
+			height: 150px;
+			float: left;
+			position:relative;
+			background:url(i/gift_bg.png) no-repeat -87px 0;
+			.icon{
+				width: 59px;
+				height: 61px;
+				display: block;
+				margin:23px auto auto auto;
+				margin-top: 23px;
+				background-repeat:no-repeat;
+				/*background-image:url(i/gift_bg.png);*/
+				img{
+					width:59px;
+					height:61px;
+				}
+			}
+			.icon1{
+				background-position:-566px -21px;
+			}
+			.icon2{
+				background-position:-640px -21px;
+			}
+			.icon3{
+				background-position:-718px -21px;
+			}
+
+			.gift-name{
+				display: block;
+				text-align: center;
+				color:#d6a361;
+				font-size: 16px;
+				line-height: 24px;
+				font-family:$font-yahei;
+			}
+			.gift-en{
+				display: block;
+				text-align: center;
+				color:#d6a361;
+				font-size: 12px;
+				line-height: 18px;
+				font-family:$font-verdana;
+			}
+			.gift-tip{
+				position: absolute;
+				top:45px;
+				left:105px;
+				z-index: 10;
+				.tip-box{
+					position: relative;
+					/*height:40px;*/
+					overflow:visible;  
+				}
+				.tip-arr {
+					top: 6px;
+					left: -5px;
+					width: 6px;
+					height: 11px;
+					position: absolute;
+					background: url(i/arrow.gif) 0 0;
+					background-repeat: no-repeat;
+					overflow: hidden;
+				}
+				.tip-close {
+					right: 5px;
+					top: 6px;
+					display: block;
+					position: absolute;
+					z-index: 2;
+					color: #f60;
+					font: 12px "simsun";
+					cursor: pointer;
+				}
+				.tip-cont{
+					width: 128px;
+					padding: 2px 10px;
+					text-align: left;
+					background: #fffdee;
+					border: 1px solid #edd28b;
+					color: #333;
+					-moz-box-shadow: 0 0 2px 2px #eee;
+					-webkit-box-shadow: 0 0 2px 2px #eee;
+					box-shadow: 0 0 2px 2px #eee;
+					.tip-txt{
+						padding:10px;
+					}
+					.btn-con{
+						text-align: center;
+					}
+					.tip-edit{
+						color: #069;
+					}
+				}
+			}
+		}
+		.gift-msg{
+			display: none;
+		}
+		.hover .gift-circle{
+			background-position:-248px 0;
+			cursor: pointer;
+		}
+		.ui-switchable-panel-disable{
+			cursor: default;
+			.gift-circle{
+				background-position: -407px 0;
+				.icon{
+					filter:alpha(opacity=20);
+					-moz-opacity:0.2; 
+					opacity:0.2;
+				}
+				.icon1{
+					background-position:-566px -90px;
+				}
+				.icon2{
+					background-position:-641px -90px;
+				}
+				.icon3{
+					background-position:-718px -90px;
+				}
+				.gift-name,.gift-en{
+					color: #999;
+				}
+			}
+			.gift-circle{
+				cursor: default;
+			}
+			.btn-receive{
+				font-family: arial,$font-yahei;
+				cursor:default;
+				@include r-corners(1px);
+				@include btn(30px,#f2f2f2,#f7f7f7,$fc:#323333,$fz:14px,$fw:normal,$pd:0);
+				&:hover{
+					@include box-shadow(0 1px 1px rgba(0,1,1,0.8));
+					@include gradual-change(#f7f7f7,#f2f2f2);
+					cursor:default;
+				}
+				border:1px solid #ddd;
+			}
+		}
+	}
+	.wrap-gift-tip{
+		.gift-tip{
+			/*margin-bottom: 30px;*/
+			margin-top: 10px;
+			/*display: none;*/
+			background-color: red;
+			.tip-box{
+				position: relative;
+				overflow:visible;
+			}
+			.tip-arr {
+				top: -9px;
+				width: 11px;
+				height: 10px;
+				position: absolute;
+				background: url(i/arrow2.gif) 0 0;
+				background-repeat: no-repeat;
+				overflow: hidden;
+			}
+			.tip-arr-0 {
+				left: 126px;
+			}
+			.tip-arr-1 {
+				left: 348px;
+			}
+			.tip-arr-2 {
+				left: 568px;
+			}
+			.tip-arr-3 {
+				left: 787px;
+			}
+			.tip-cont{
+				padding: 16px 20px 16px 20px;
+				background: #fff;
+				border: 1px solid #eee;
+				color: #333;
+				.btn-con{
+					text-align: center;
+				}
+			}
+			.tip-txt{
+				line-height: 22px;
+				color: #666;
+			}
+			.tip-a{
+				color: #005ea7;
+			}
+		}
+	}
+}
+
+.gift-nologin-m{
+	padding-bottom:0;
+	.gift-list{
+		.prev{
+			margin-top: 65px;
+		}
+		.next{
+			margin-top: 65px;
+		}
+		.gift-list-cont{
+			height: 170px;
+		}
+	}
+}
+
+
+
+
+
+
+

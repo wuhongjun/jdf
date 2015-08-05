@@ -1,0 +1,32 @@
+<h2>焦点图片 p-slider</h2>
+
+<div id="$id" class="p-slider J_p-slider">
+    <div class="slider-wrap">
+        <ul>
+        #set( $arr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] )
+        #foreach( $item in $arr )
+            #if ( $item <= $count )
+            <li class="item ui-slider-item #if($item==0)curr#end" style="background:#$productList[$item]['bgcolor'];">
+                <div class="i-wrap">
+                    <div class="i-inner">
+                        <a target="_blank" class="i-link" href="">
+                            <img data-img="1" class="err-product" src="$productList[$item]['src']" width="726" height="413" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </li>
+            #end
+        #end
+        </ul>
+    </div>
+    <div class="slider-trigger">
+        <div class="w">
+            #set( $arr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] )
+            #foreach( $item in $arr )
+            #if ( $item <= $count )
+            <a class="ui-slider-trigger #if($item==0)curr#end" href="#none"></a>
+            #end
+            #end
+        </div>
+    </div>
+</div>

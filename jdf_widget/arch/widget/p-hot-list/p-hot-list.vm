@@ -1,0 +1,30 @@
+<h2>热销排行 p-hot-list</h2>
+
+<div class="p-hot-list">
+	<ul>
+		#set( $arr = [1, 2, 3, 4, 5, 6] )
+		#foreach( $item in $arr )
+		#if ( ($item == 1)||($item == 2) || ($item == 3) )
+		<li class="fore$item curr">
+			<div class="p-num">
+				<b>$item</b><a class="p-img" href="#" target="_blank"><img width="80" height="80" src="http://img13.360buyimg.com/n3/g13/M01/12/16/rBEhUlLeKowIAAAAAAJVsaouWgIAAIHXQFTdDEAAlXJ687.jpg" alt=""/></a>
+			</div>
+			<div class="p-info">
+				<a class="p-name" href="#" target="_blank">Bacardi百加得超级朗姆 750ml</a>
+				<div class="p-price">￥299.00</div>
+			</div>
+		</li>
+		#else
+		<li class="fore$item">
+			<div class="p-num">
+				<b>$item</b><a class="p-img" href="#" target="_blank"><img width="80" height="80" src="http://img13.360buyimg.com/n3/g13/M01/12/16/rBEhUlLeKowIAAAAAAJVsaouWgIAAIHXQFTdDEAAlXJ687.jpg" alt=""/></a>
+			</div>
+			<div class="p-info">
+				<a class="p-name" href="#" target="_blank">Bacardi百加得超级朗姆 750ml</a>
+				<div class="p-price">￥299.00</div>
+			</div>
+		</li>
+		#end
+		#end
+	</ul>
+</div>

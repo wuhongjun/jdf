@@ -1,0 +1,31 @@
+<h2>热销活动图片 p-hot-list-img</h2>
+<div class="p-hot-list-img clearfix">
+    <ul>
+        <li>
+            <a href="" target="_blank">
+                <img class="" src="http://img30.360buyimg.com/cms/g15/M0A/0D/18/rBEhWVMkOK0IAAAAAADfgwz7wL4AAKJLgD_fpUAAN-b783.jpg" width="260" height="152" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="" target="_blank">
+                <img class="" src="http://img30.360buyimg.com/cms/g15/M04/0D/18/rBEhWFMkOB0IAAAAAAE2YaqvTZQAAKJLQIjDvQAATZ5933.jpg" width="260" height="152" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="" target="_blank">
+                <img class="" src="http://img30.360buyimg.com/cms/g13/M05/1D/08/rBEhVFMkN0QIAAAAAABkp_LuoDoAAKLfABNdLYAAGS_509.jpg" width="260" height="152" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="" target="_blank">
+                <img src="http://img30.360buyimg.com/cms/g13/M03/1D/08/rBEhVFMkOGQIAAAAAADMGNEKBCoAAKLfQIl2k0AAMww815.jpg" width="260" height="152" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="" target="_blank">
+                <img class="" src="http://img30.360buyimg.com/cms/g14/M03/18/11/rBEhVVMkODoIAAAAAADcDOHbBrQAAKSLAPTwPsAANwk219.jpg" width="260" height="152" alt="">
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- recActivity end -->

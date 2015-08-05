@@ -1,0 +1,146 @@
+@import "../../app/css/lib.scss";
+.category{
+	border:1px solid #ffd4ae;
+	background:#fff;
+	dl{
+		@include clearfix;
+		line-height: 22px;
+		// padding:10px 0;
+		//border-bottom:1px dotted #ccc;
+		&.fore-extra{
+			border:none;
+			border-top:1px solid #ffd4ae;
+			border-bottom:1px dotted #ccc;
+			position:relative;
+			z-index: 1;
+			top:1px;
+			background:#fff;
+		}
+	}
+	dt{
+		float:left;
+		padding:10px 0;
+		width:110px;
+		text-align:right;
+		color:#7d7d7d;
+		font-weight: bold;
+	}
+	dd{
+		float:left;
+		padding:10px 0;
+	}
+	li{
+		float:left;
+		margin-right: 20px;
+		a{
+			@include inline-block;
+			// vertical-align: middle;
+			height:22px;
+			line-height:22px;
+			padding:0 3px;
+			color:#333;
+			overflow:hidden;
+			&:hover,&.curr{
+				background:#d47106;
+				color:#fff; 
+			}
+		}
+	}
+	
+	.sec-category{
+		padding:10px 0 10px 158px;
+		border-top:1px dotted #ccc;
+		a{
+			color:#7d7d7d;
+			&:hover{
+				color:#fff;
+			}
+		}
+	}
+	.itxt{
+		*vertical-align: middle;
+	}
+	.btn-9{
+		padding:2px 14px;
+	}
+}
+.filter{
+	border:solid #ffd4ae;
+	border-width:0 1px;
+	background:#fff;
+	@include clearfix;
+	dl{
+		height:22px;
+		line-height: 22px;
+		padding:10px 0;
+		float:left;
+		_width:500px;
+		a{
+			@include inline-block;
+			// vertical-align: middle;
+			line-height:18px;
+			height:18px;
+			padding:2px 3px;
+			color:#333;
+			overflow:hidden;
+			background:#fff;
+			.down,.up{
+				@include inline-block;
+				width:8px;
+				height:8px;
+				overflow: hidden;
+				margin-left: 5px;
+				overflow:hidden;
+				vertical-align: middle;
+				background: url(/app/css/i/exc.png) -101px -15px no-repeat;
+			}
+			.up{
+				background-position: -101px -26px;
+			}
+			&:hover,&.curr{
+				background:#d47106;
+				color:#fff; 
+				.down{
+					background-position: -93px -15px;
+				}
+				.up{
+					background-position: -93px -26px;
+				}
+			}
+
+		}
+	}
+	.extra-r{
+		float:right;
+		line-height: 30px;
+		padding:10px 0 0;
+		font-size:14px;
+		margin:0 30px 0 0;
+		_display:inline;
+		// _width:355px;
+		_white-space:nowrap; 
+		//text-align: right;
+		b{
+			font-family: verdana;
+			margin:0 3px;
+		}
+	}
+	dt{
+		float:left;
+		width:110px;
+		text-align:right;
+		color:#7d7d7d;
+		font-weight: bold;
+	}
+	dd{
+		float:left;
+	}
+	li{
+		float:left;
+		margin-right: 20px;
+	}
+	.page-m{
+		// _width:166px;
+	}
+	
+}

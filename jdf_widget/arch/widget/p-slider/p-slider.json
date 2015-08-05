@@ -1,0 +1,18 @@
+{
+    "id": "p-slider",
+    "count": "2",
+    "productList":[
+        {
+            "src": "http://img30.360buyimg.com/da/jfs/t1348/265/184124900/85588/e132bca1/5562be20N1826be22.jpg", 
+            "bgcolor": "52A4ED" 
+        }, 
+        {
+            "src": "http://img11.360buyimg.com/da/jfs/t1531/111/194569447/91088/5ec9a022/5562e8cfN31a2a65b.jpg", 
+            "bgcolor": "FCCF00" 
+        }, 
+        {
+            "src": "http://img13.360buyimg.com/da/jfs/t1195/353/989547781/90549/b6cfe15f/5562e93cN9e18f6fb.jpg", 
+            "bgcolor": "6BCEEF" 
+        }
+    ]
+}

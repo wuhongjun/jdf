@@ -1,0 +1,41 @@
+.p-hot-list{
+	ul{
+		padding:20px 10px 0;
+		li{
+			zoom:1;
+			margin-bottom: 13px;
+			_margin-bottom:10px;
+			height: 18px;
+			overflow: hidden;
+			&.curr{
+				height: 85px;
+			}
+		}
+		.p-num{
+			float: left;
+			width:18px;
+			.p-img{display: none;padding: 0;}
+		}
+		.p-info{
+			width: 175px;
+			padding-left: 3px;
+			.p-name{display: block;height:18px;line-height:18px;color:#333;overflow: hidden;}
+		}
+		.curr{
+			.p-num{width: 98px;}
+			.p-img{display: inline-block;}
+			.p-info{
+				float: left;
+				width: 90px;
+				padding-left: 8px;
+				.p-name{margin-bottom:10px;height: 36px;}
+				.p-price{display: block;}
+			}
+		}
+		.p-info{
+			float: left;
+		}
+		b{display: inline-block;margin:3px 4px 0 0;height: 14px;width: 14px;text-align:center;vertical-align: top;font:10px/14px 'verdana';color:#fff;background:#fac553;overflow: hidden;}
+		.p-price{display:none;color:#333;}
+	}
+}

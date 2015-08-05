@@ -1,0 +1,281 @@
+@import "../../css/lib.scss";
+#plus-user{
+    border:1px solid #fed4ae;
+    margin-bottom: 10px;
+    .plus-plan{
+        height: 268px;
+        .mc{
+            margin-top:20px;
+            font-size:14px;
+            line-height: 30px;
+            .txt{
+                width:80%;
+            }
+        }
+        .plan-l{
+            float: left;
+            background-color: #fff2da;
+            border-right:1px solid #fed4ae;
+            height: 268px;
+            width: 35%;
+            position:relative;
+            .plan-icon{
+                position:absolute;
+                right:20px;
+                bottom:10px;
+                width:135px;
+                height:135px;
+                background:url("i/bg01.jpg") no-repeat;
+            }
+            .mt{
+                .tit{
+                    @include inline-block;
+                    line-height: 23px;
+                    span{
+                        position:relative;
+                        top:-9px;
+                        @include inline-block;
+                        width:66px;
+                        height:37px; 
+                        background:url("i/logo.png") left top no-repeat;
+                        vertical-align: middle;
+                        margin:0 5px;
+                    }
+                }
+            }
+            .btn-con{
+                padding:60px 135px 0 0;
+            }
+        }
+        .plan-r{
+            float: right;
+            background-color: #fff;
+            height: 268px;
+            width: 64.8%;
+            .ycolor{
+                color:#ff8601;
+                font-weight: bold;
+                a{
+                    color:#ff8601;
+                }
+            }
+            .plus-detail{
+                padding:20px 20px 30px;
+                #plus-info{
+                    width:150%;
+                    line-height: 150%;
+                    .plus-list{
+                        min-height: 65px;
+                        height:65px;
+                        height:auto !important;
+                        padding:15px 0px 0px 90px;
+                        float:left;
+                        margin:40px 25px 0 0;
+                        font-size:12px;
+                        .tips{
+                            margin-top:5px;
+                            color:#999;
+                        }
+                        .more{
+                            @include inline-block;
+                            width:65px;
+                            height:20px;
+                            line-height: 20px;
+                            background:#f5f5f5;
+                            border:1px solid #ddd;
+                            text-align: center;
+                            margin-top:5px;
+                            font-size:12px;
+                            text-decoration: none;
+                        }
+                    }
+                    .item01{
+                        background:url("i/info-icon01.jpg") top left no-repeat;
+                    }
+                    .item02{
+                         background:url("i/info-icon02.jpg") top left no-repeat;
+                        border:none;
+                    }
+                    .item03{
+                         background:url("i/info-icon03.jpg") top left no-repeat;
+                        border:none;
+                    }
+                }
+            }
+        }
+    }
+    .plus-noplan{
+        height: 268px;
+        .plan-l{
+            float: left;
+            height: 268px;
+            width: 35%;
+            background-color: #fffbf3;
+            border-right:1px solid #fed4ae;
+            .mt{
+                .tit{
+                    @include inline-block;
+                    line-height: 23px;
+                    span{
+                        position:relative;
+                        top:-9px;
+                        @include inline-block;
+                        width:66px;
+                        height:37px; 
+                        background:url("i/logo.png") left top no-repeat;
+                        vertical-align: middle;
+                        margin:0 5px;
+                    }
+                }
+            }
+            .mc{
+                font-size:14px;
+                line-height: 30px;
+                font-size:12px;
+                em{
+                    font-size:12px;
+                    color:#999;
+                }
+                .btn-con{
+                    padding-top:0px;
+                }
+            }
+        }
+        .plan-r{
+            float: right;
+            height: 268px;
+            width: 64.8%;
+            background-color: #fff;
+            .plus-power{
+                dl{
+                    float: left;
+                    width: 24.9%;
+                    text-align: center;
+                    padding-top: 20px;
+                    dt{
+                        color: #666;
+                        font-size:14px;
+                        .ico{
+                            display: block;
+                            width:112px;
+                            height:112px;
+                            margin:0 auto 8px;
+                            background: url(i/plan-icon.png) 0 0 no-repeat;
+                        }
+                    }
+                    dd{
+                        color: #999;
+                        padding-top: 5px;
+                    }
+                    .p-i01 a{
+                        background-position: center -165px*0;
+                    }
+                    .p-i02 a{
+                        background-position: center -165px*1;
+                    }
+                    .p-i03 a{
+                        background-position: center -165px*2;
+                    }
+                    .p-i04 a{
+                        background-position: center -165px*3;
+                    }
+                }
+            }
+        }
+    }
+    .m{
+        margin: 0;
+        padding: 20px 20px 30px;
+        overflow:visible;
+        .mt{
+            margin-bottom: 10px;
+            overflow: visible;
+            position:relative;
+            .plus-chart{
+                position:absolute;
+                right:0px;
+                bottom:0px;
+                color:#999;
+            }
+            .tit{
+                color: #c11c1c;
+                font:normal 22px/150% Arial,Verdana,"microsoft yahei";
+            }
+            .link-to{
+                @include inline-block;
+                margin:12px 0 0 10px;
+            }
+        }
+    }
+    .btn-con{
+        text-align: center;
+        padding-top: 15px;
+        .btn-x{
+            display: inline-block;
+            padding: 0 15px;
+            @include r-corners(5px);
+            height: 42px;
+            line-height: 42px;
+            color: #fff;
+            background-color: #ec4245;
+            font-weight: bold;
+            text-decoration: none;
+            &:hover{
+                background:#fa5c5f;
+            }
+        }
+    }
+}
+.plus-module{
+    padding:40px 0;
+    .succeed{
+        width:610px;
+        background:url("i/icon02.png") left center no-repeat;
+        padding-left:60px;
+        font:18px/28px '\5fae\8f6f\96c5\9ed1';
+        color:#7abd54;
+        margin:auto;
+    }
+    .popup-btn{
+        margin-top:30px;
+        text-align: center;
+    }
+    .plusBtn{
+        @include inline-block;
+        width:139px;
+        height:39px;
+        line-height: 39px;
+        background:#ff8d15;
+        text-align: center;
+        font-size:14px;
+        font-weight: bold;
+        color:#fff;
+        border-radius: 5px;
+    }
+}
+.root61{
+    #plus-user{
+        .plus-noplan{
+            .plan-l{
+                .mc{
+                    margin-top:20px;
+                    font-size:14px;
+                    .btn-con{
+                        padding-top:15px;
+                    }
+                }
+            }
+        }
+        .plus-plan{
+            .plan-r{
+                .plus-detail{
+                    #plus-info{
+                        .plus-list{
+                            margin:40px 100px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

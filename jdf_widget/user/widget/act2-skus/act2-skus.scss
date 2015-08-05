@@ -1,0 +1,217 @@
+@import "../../css/lib.scss";
+.act-skus{
+	@include clearfix;
+	.item{
+		width:244px;
+		height:289px;
+		float: left;
+		margin-bottom: 9px;
+		margin-top: 13px;
+		border:1px solid transparent;
+		text-align: center;
+		&:hover{
+			border:1px solid #ddd;
+			box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1); 
+		}
+	}
+	.img{
+		width:160px;
+		height:160px;
+		display: block;
+		margin:10px auto;
+		img{
+			width:160px;
+			height:160px;
+		}
+	}
+	.name{
+		height:38px;
+		overflow: hidden;
+		display: block;
+		margin:0 23px 3px 23px;
+		line-height: 19px;
+		text-align: left;
+		color:#666;
+		.tit{
+			color: #e4393c;
+		}
+	}
+	.price{
+		margin-left: 23px;
+		color:#e43c3f;
+		font-weight: bold;
+		font-family: $font-songti;
+		line-height: 28px;
+		text-align: left;
+	}
+	.def{
+		clear: both;
+		margin:0 23px;
+		line-height: 28px;
+		text-align: left;
+		color:#e43c3f;
+		font-weight: bold;
+		font-family: $font-songti;
+		.price{
+			margin-left: 0;
+			float: left;
+			color:#999;
+			font-weight: normal;
+		}
+		em{
+			@include inline-block;
+			margin:0 5px;
+			color:#999;
+			font-weight: normal;
+		}
+	}
+	.btn{
+		font-family: arial,"microsoft yahei";
+		cursor:pointer;
+		@include r-corners(3px);
+		@include btn(25px,#e74649,#df3134,$fc:#fff,$fz:12px,$fw:normal,$pd:22px);
+		@include inline-block;
+		margin:0 auto 10px auto;
+		&:hover{
+			@include gradual-change(#f05356,#eb3c3f);
+
+		}
+	}
+}
+.act-plist-m{
+	width:198px;
+	float:none;
+	margin:0;
+	.act-opbtns{
+		width:198px;
+		.btn-view{
+			padding:6px 0;
+		}
+	}
+}
+
+.list_act-skus{
+	.item{
+		width:238px;
+		height:313px;
+		margin-right: 7px;
+		position:relative;
+	}
+	.item:nth-child(4n){
+		margin-right: 0;
+	}
+	.addition{
+		float: left;
+		height:16px;
+		line-height: 16px;
+		margin:0 20px 2px 20px;
+		color:#fff;
+		background-color:#db4c44;
+		.inner_addition{
+			padding:0 8px 0 0;
+		}
+		.tit{
+			width:16px;
+			margin-right: 3px;
+			@include inline-block;
+			background-color:#ff6662;
+		}
+	}
+	.price{
+		margin-left: 20px;
+		color:#e43c3f;
+		font-weight: bold;
+		font-family: 'Verdana';
+		line-height:22px;
+		text-align: left;
+		clear:both;
+	}
+	.def{
+		clear: both;
+		margin:0 23px;
+		line-height: 18px;
+		text-align: left;
+		color:#e43c3f;
+		font-weight: normal;
+		font-family: $font-songti;
+		.price{
+			margin-left: 0;
+			float: none;
+			color:#999;
+			font-weight: normal;
+		}
+		em{
+			@include inline-block;
+			margin:0 5px;
+			color:#999;
+			font-weight: normal;
+		}
+	}
+	.def_price{
+		color:#999;
+		.price{
+			color:#e43c3f;
+			font-family: 'Verdana';
+		}
+	}
+	.time{
+		margin-left: 20px;
+		line-height: 18px;
+		color: #999;
+		text-align: left;
+		clear:both;
+		height:18px;
+		overflow: hidden;
+	}
+	.flag{
+		width:41px;
+		height: 43px;
+		padding-top:12px;
+		color:#fff;
+		text-align: center;
+		font-size: 12px;
+		line-height: 18px;
+		display: block;
+		font-weight: normal;
+		position:absolute;
+		right: 0;
+		top:-1px;
+		background-image:url(i/pintro.png);
+		&.flag1{
+			background-position:0 0;
+		}
+	}
+	.status_suc{
+		.flag{
+			top:-2px;
+			height: 49px;
+			padding-top:5px;
+			line-height: 14px;
+			background-position:0 -116px;
+		}
+	}
+	.status_fail{
+		.flag{
+			height: 49px;
+			padding-top:5px;
+			top:-2px;
+			line-height: 14px;
+			background-position:0 -58px;
+			color:#adadad;
+		}
+	}
+}
+
+.status_end{
+	.btn{
+		@include btn(25px,#898989,#969696,$fc:#fff,$fz:12px,$fw:normal,$pd:22px);
+	}
+	.flag{
+		height: 39px;
+		padding-top:15px;
+		top:-2px;
+		line-height: 14px;
+		background-position:0 -58px;
+		color:#adadad;
+	}
+}

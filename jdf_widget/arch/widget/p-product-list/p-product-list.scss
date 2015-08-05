@@ -1,0 +1,53 @@
+.p-product{
+	li{
+		float:left;
+		width:246px;
+		height:304px;
+		border-right:1px solid #e6e6e6;
+		overflow: hidden;
+		a:hover{
+			text-decoration:none;
+			color:#666;
+		}
+		.p-img{
+			height:241px;
+		}
+		.p-name{
+			background: #f7f7f7;
+			display: block;
+			padding-top:5px;
+			line-height: 33px;
+			height: 33px;
+			overflow: hidden;
+			padding-left:10px;
+		}
+		.p-price{
+			span{
+				float: right;
+				display: block;
+				padding-right: 10px;
+			}
+			background: #f7f7f7;
+			height:25px;
+			padding-left:10px;
+		}
+	}
+	.fore4,.fore9{
+		border: none;
+	}
+	.fore5,.fore10{
+		display: none;
+	}
+}
+.root61 .p-product{
+	li{
+		width:241px;
+	}
+	.fore5,.fore10{
+		display: block;
+		border:none;
+	}
+	.fore4,.fore9{
+		border-right:1px solid #e6e6e6;
+	}
+}

@@ -1,0 +1,364 @@
+html,body,html body{
+    background-color: transparent;
+}
+.g_puzzle_wp{
+     width:462px;
+    .g_puzzle_bg{
+        margin-top:17px;
+        padding:5px;
+        background: rgba(0,0,0,0.15);
+        background-color:transparent\10;
+        filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, startColorstr='#26000000',endColorstr='#26000000'); 
+        zoom:1;
+        border-radius: 5px;
+        .g_puzzle{
+            width:388px;
+            height:505px;
+            padding:0 30px 15px;
+            background:#fff;
+            border:2px solid #fed4ae;
+            font-family:'Microsoft YaHei';
+            position:relative;
+        }
+        .g_puzzle_close{
+            position:absolute;
+            top:-24px;
+            right:-26px;
+            width:55px;
+            height:56px;
+            background:url("i/close.png");
+            _background:url("i/close_8.png");
+            cursor:pointer;
+        }
+        .g_puzzle_title{
+            margin:17px 0 0;
+            color:#000;
+            font-size:18px;
+            span{
+                margin-left:20px;
+                font-size:14px;
+                color:#999;
+            }
+            .red{
+                color:#e43b3e;
+            }
+        }
+        .g_jigsaw{
+            width:388px;
+            height:388px;
+            overflow: hidden;
+            position: relative;
+            margin-top:20px;
+            .g_puzzle_box{
+                display:none;
+                width:393px;
+            }
+            .g_jigsaw_img{
+                width:388px;
+                height:388px;
+            }
+            .g_puzzle_item{
+                float:left;
+                margin:0 5px 5px 0;
+                position:relative;
+                background: url("http://misc.360buyimg.com/lib/skin/e/i/error-jd.gif") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
+                img{
+                    width:126px;
+                    height:126px;
+                }
+            }
+            .drayStar{
+                width:126px;
+                height:126px;
+                background:#f7f7f7;
+            }
+            .dragover{
+               opacity: 0.6\8;
+               filter:alpha(opacity=60)\8;
+            }
+            .dragover:after{
+                content:"";
+                position: absolute;
+                width:100%;
+                height:100%;
+                left:0px;
+                top:0px;
+                background-color: rgba(0,0,0,.5);
+            }
+            .shade{
+                position:absolute;
+                z-index:99;
+                width:388px;
+                height:388px;
+                height:388px;
+                background:#000;
+                opacity: 0.3;
+                filter:alpha(opacity=30);  
+            }
+            .star{
+                position:absolute;
+                left:50%;
+                top:50%;
+                width:182px;
+                height:180px;
+                background:url("i/star.png");
+                margin:-90px 0 0 -91px;
+                cursor: pointer;
+                z-index: 100;
+            }
+            .time_down{
+                position: absolute;
+                bottom:0px;
+                right:0px;
+                width:125px;
+                height:30px;
+                background: rgba(0,0,0,0.6);
+                background-color:transparent\9;
+                filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, startColorstr='#99000000',endColorstr='#99000000'); 
+                zoom:1;
+                font-size:14px;
+                line-height:30px;
+                text-align: center;
+                color:#fff;
+                z-index: 101;
+                span{
+                    color:#e43b3e;
+                    margin-left:5px;
+                    font-size:20px;
+                }
+            }
+            .shade_gray{
+                position:absolute;
+                z-index:99;
+                width:388px;
+                height:388px;
+                height:388px;
+                background:#999;
+                opacity: 0.8;
+                filter:alpha(opacity=80);  
+            }
+            .shade_txt{
+                position:absolute;
+                z-index:100;
+                width:388px;
+                height:388px;
+                line-height:388px;
+                text-align: center;
+                font-size:26px;
+                color:#fff;
+            }
+        }
+        .g_puzzle_operaicons{
+            margin-top:10px;
+            font-size:14px;
+            color:#999;
+            .g_puzzle_timer{
+                width:151px;
+                height:46px;
+                padding:0 15px;
+                background:url("i/timer_bg.gif");
+                font-size:28px;
+                color:#ffa442;
+                line-height:46px;
+                text-align: right;
+            }
+            .fr{
+                width:205px;
+                text-align: right !important;
+            }
+            .g_puzzle_message{
+                text-align: center;
+                .info span{
+                    color:#e43b3e;
+                }
+                .ad{
+                    margin-top:10px;
+                    height:20px;
+                    overflow: hidden;
+                    a{
+                        color:#999;
+                    }
+                    a:hover{
+                        color:#e4393c;
+                    }
+                }
+            }
+        }
+        .g_puzzle_succeed{
+            font-size:22px;
+            color:#ff6c00;
+            text-align: center;
+            margin:37px 0 29px;
+            em{
+                font-size:30px;
+                font-style: normal;
+                font-weight: bold;
+                margin:0 5px;
+            }
+        }
+        .masker{
+            width:382px;
+            height:326px;
+            border:1px dashed #ccc;
+            position: relative;
+            text-align: center;
+            margin:auto;
+            .left_top{
+                position: absolute;
+                top:-3px;
+                left:-3px;
+                width:45px;
+                height:45px;
+                background:url("i/leftTop.png");
+            }
+            .left_bottom{
+                position: absolute;
+                bottom:-3px;
+                left:-3px;
+                width:45px;
+                height:45px;
+                background:url("i/leftBottom.png");
+            }
+            .right_top{
+                position: absolute;
+                top:-3px;
+                right:-3px;
+                width:45px;
+                height:45px;
+                background:url("i/rightTop.png");
+            }
+             .right_bottom{
+                position: absolute;
+                bottom:-3px;
+                right:-3px;
+                width:45px;
+                height:45px;
+                background:url("i/rightBottom.png");
+            }
+            .succ_title{
+                font-size:18px;
+                color:#ffa442;
+                margin-top:30px;
+            }
+            .succ_second{
+                font-size:50px;
+                color:#999;
+                margin-top:25px;
+                line-height:50px;
+            }
+            .succ_last_score{
+                height:20px;
+                font-size:18px;
+                color:#ccc;
+                margin:25px 0 0;
+            }
+            .succ_opera{
+                margin:25px 0 10px;
+                a{
+                    display: inline-block;
+                    *display: inline;
+                    *zoom:1;
+                    font-size:18px;
+                    color:#fff;
+                    height:40px;
+                    line-height:38px;
+                    text-decoration: none;
+                    margin:0 20px;
+                }
+                .replay_btn{
+                    width:134px;
+                    background:url("i/again.gif");
+                    text-indent: 35px;
+                }
+                .share_btn{
+                     width:104px;
+                     background:url("i/share.gif");
+                     text-indent: 40px;
+                }
+            }
+            .g_puzzle_share{
+                display:none;
+                text-align:right;
+                margin-bottom:10px;
+                padding-right:22px;
+                position:relative;
+                z-index:1;
+                a{
+                    margin:0 2px;
+                    display: inline-block;
+                    *display: inline;
+                    *zoom:1;
+                    background:url("i/share_ico.jpg");
+                    vertical-align: bottom;
+                    overflow: hidden;
+                    text-indent:1000px;
+                }
+                .share_sina{
+                    width:17px;
+                    height:19px;
+                    background-position: 0px 0px;
+                }
+                .share_twb{
+                    width:16px;
+                    height:19px;
+                    background-position: -25px 0px;
+                }
+                .share_rr{
+                    width:16px;
+                    height:19px;
+                    background-position: -49px 0px;
+                }
+                .share_zone{
+                    width:16px;
+                    height:19px;
+                    background-position: -72px 0px;
+                }
+                .share_quan{
+                    width:19px;
+                    height:19px;
+                    background-position: -96px 0px;
+                }
+            }
+        }
+        .g_puzzle_over_succ{
+            .masker{
+                height:283px;
+            }
+        }
+        .operaicons{
+            margin-top:30px;
+        }
+        .defeated{
+            margin-top:40px;
+            .defeated_img{
+                width:48px;
+                height:47px;
+                background:url('i/defeated_img.gif');
+                margin:50px auto 0;
+            }
+            .defeated_title{
+                font-size:26px;
+                color:#e43b3e;
+                margin-top:18px;
+            }
+            .defeated_txt{
+                font-size:18px;
+                color:#ccc;
+                margin-top:25px;
+            }
+            .defeated_opera{
+                margin-top:65px;
+            }
+        }
+    }
+}
+
+.g_puzzle_offside{
+    position:absolute;
+    top:-130px;
+    right:-57px;
+    width:57px;
+    height:158px;
+    background:url("i/puzzle_aside_n.png");
+    cursor: pointer;
+}

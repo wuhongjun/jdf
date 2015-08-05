@@ -1,0 +1,261 @@
+/* 
+主体部分下方的帖子信息展示。
+
+D:\fe\user\club-2015\circle.1.0.0\html\all.html:
+
+D:\fe\user\club-2015\circle.1.0.0\html\index-game.html:
+
+D:\fe\user\club-2015\circle.1.0.0\html\index-intelligent.2.0.0.html:
+
+D:\fe\user\club-2015\circle.1.0.0\html\index-intelligent.html:
+
+D:\fe\user\club-2015\circle.1.0.0\html\index-nologin.html:
+
+D:\fe\user\club-2015\circle.1.0.0\html\index.html:  */
+
+
+
+@import "../../css/lib.scss";
+@include keyframes(blinkAnim, webkit moz){
+    from {
+
+       left:-160px;
+    }
+    to {
+       left:100px;
+    }
+}
+.info-pic:before{content:'';position:absolute;width:200px;height:340px;top:0;left:-160px;overflow:hidden;
+	background:-moz-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,0.4) 50%,rgba(255,255,255,0) 100%);
+	background:-webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(50%,rgba(255,255,255,0.4)),color-stop(100%,rgba(255,255,255,0)));
+	background:-webkit-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,0.4) 50%,rgba(255,255,255,0) 100%);
+	background:-o-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,0.4) 50%,rgba(255,255,255,0) 100%);
+	-webkit-transform:skewX(-25deg);
+	-moz-transform:skewX(-25deg);}
+#info{
+	background:none;
+	.mt{
+		
+		border:none;
+		h2{
+			font-size:14px;
+			font-family: $font-yahei;
+			height:22px;
+			line-height: 22px;
+			color:#fff;
+		}
+	}
+}
+.info-box{
+	height:240px;
+	margin-bottom:20px;
+	background:#fff;
+	position:relative;
+	_position:static;
+	.info-pic,.info-pic-link{
+		float:left;
+		width:360px;
+		height:240px;
+		z-index:1;
+		_width:320px;
+	}
+	.info-pic img{
+		@include transition(transform .2s linear)
+	}
+	.info-pic{overflow:hidden;position:relative;_position:static;}
+	.info-pic a{display:block;width:360px;height:340px;overflow:hidden;_width:320px;}
+	.info-pic img{-ms-interpolation-mode:bicubic}
+	
+	.info-pic img:hover{
+		@include transform(translateX(-10px));
+	}
+	.info-left-arr{
+		position:absolute;
+		left:350px;
+		top:0;
+		height:240px;
+		width:12px;
+		z-index: 2;
+		background:url(../../css/i/club-info-arr.png);
+		_display:none;
+		b{
+			display: block;
+			width:8px;
+			height:16px;
+			position:absolute;
+			top:50%;
+			margin-top: -8px;
+			left:0;
+		}
+	}
+	.info-msg{
+		padding-left:10px;
+		padding-top:20px;
+		overflow: hidden;
+		zoom:1;
+		position:relative;
+		_position:static;
+		_padding-left:0;
+		z-index: 2;
+		height:220px;
+		background:#fff;
+		.info-msg-top{
+			position:absolute;
+			_display:none;
+			width:20px;
+			height: 20px;
+			top:0;
+			right:0;
+			background:url(../../css/i/club-icon.png) 0 0;
+		}
+		
+		.tit{
+			font-size:18px;
+			font-family: $font-yahei;
+			height:30px;
+			line-height: 30px;
+			margin-bottom: 5px;
+			// width:380px;
+			overflow:hidden;
+			span.sign{
+				@include inline-block;
+				background:$color01;
+				color:#fff;
+				height:20px;
+				line-height: 20px;
+				font-size:12px;
+				@include r-corners(2px);
+				padding:0 5px;
+				vertical-align: middle;
+				margin:-5px 5px 0 0;
+				font-weight: normal;
+
+			}
+		}
+		.tags{
+			position:relative;
+			_position:static;
+			margin-bottom: 10px;
+			.extra-r{
+				position:absolute;
+				right:0;top:0;
+				_position:static;
+				_display:inline;
+				_margin-left:20px;
+			}
+		}
+		.info-cont{
+			color: $color06;
+			a{
+				color:$color05;
+			}
+			p{
+				text-indent: 2em;
+				line-height: 20px;
+				word-break:break-all;
+				word-wrap:break-word;
+			}
+		}
+		.op-btns{
+			margin-top: 20px;
+			*margin-top:10px;
+			.view-nums,.zan-nums,.share,.comment-nums{
+				@include inline-block;
+				@include r-corners(13px);
+				height:25px;
+				line-height: 25px;
+				border:1px solid #b0b0b0;
+				padding:0 10px;
+				font-family: verdana;
+				margin-right: 10px;
+				overflow:hidden;
+				vertical-align: middle;
+				b{
+					@include inline-block;
+					vertical-align: middle;
+					height:14px;
+					width: 14px;
+					overflow:hidden;
+					margin:-2px 2px 0 0;
+					background-image:url(../../css/i/club-icon.png);
+
+				}
+
+			}
+			.view-nums b{
+				background-position:0 -77px;
+			}
+			.zan-nums b{
+				background-position:-16px -77px;
+			}
+			.comment-nums b{
+				background-position:-16px -162px;
+			}
+			.zan-nums:hover{
+				background:#fdeff0;
+				border-color:#e64649;
+				b{
+					background-position: 0 -161px;
+				}
+			}
+			.share{
+				padding:0 5px;
+				font-size:12px;
+				cursor:pointer;
+				.more{
+					@include inline-block;
+					vertical-align: middle;
+					height:14px;
+					width: 14px;
+					overflow:hidden;
+					margin:-2px 2px 0 0;
+					background-image:url(../../css/i/club-icon.png);
+					background-position: -32px -77px;
+					*margin-top:4px;
+				}
+				a{
+					display:none;
+					vertical-align: middle;
+					font-size: 12px;
+					padding-left: 17px;
+					line-height: 16px;
+					height: 16px;
+					margin:-2px 2px 0 0;
+					background-image: url(../../css/i/share-icon.png);
+					background-repeat: no-repeat;
+					cursor: pointer;
+					&.weibo{
+						background-position:0 -1px;
+					}
+					&.tqq{
+						background-position:-24px -1px;
+					}
+					&.renren{
+						background-position:-48px -1px;
+					}
+					&.kaixin{
+						background-position:-72px -1px;
+
+					}
+					&.douban{
+						background-position:-96px -1px;
+
+					}
+					
+				}
+
+			}
+			.hover{
+				a{
+					@include inline-block;
+				}
+			} 
+
+
+		}
+	}
+}
+.info-box:hover .info-pic:before{
+	-webkit-animation:blinkAnim .4s ease-out backwards;
+	-moz-animation:blinkAnim .4s ease-out forwards;
+}

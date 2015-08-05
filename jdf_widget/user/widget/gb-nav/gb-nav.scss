@@ -1,0 +1,78 @@
+@import "../../app/css/lib.scss";
+.gb-nav{
+	background:#ffa442;
+	border-top:2px solid #ff8400;
+	height:60px;
+	line-height: 60px;
+	width: 990px;
+	position: relative;
+	z-index: 1;
+	dl{
+		@include clearfix;
+		font-family: $font-yahei;
+		color:#fff;
+		height:60px;
+		
+	}
+	dt{
+		float:left;
+		width:205px;
+		height:60px;
+		line-height: 60px;
+		background:url(/app/css/i/nav-dt.png) no-repeat;
+	}
+	dd{
+		float:left;
+		font-size:15px;
+	}
+	ul{
+		@include clearfix;
+	}
+	li{
+		float:left;
+		a{
+			display:block;
+			padding:0 14px;
+			color:#fff;
+			height:60px;
+			position:relative;
+			b{
+				display:block;
+				position:absolute;
+				top:21px;
+				left:-1px;
+				width:1px;
+				height:18px;
+				vertical-align: middle;
+				background:#ffc17e;
+
+			}
+			&.curr,&:hover{
+				position:relative;
+				z-index: 2;
+				background:#ed8c24;	
+				color:#fff;
+				text-decoration: none;
+				overflow:hidden;
+				b{
+					display:none;
+				}
+			}
+			&.curr{
+				z-index: 1;
+				font-size:16px;
+				font-weight: bold;
+				
+			}
+		}
+		&.fore1 a b{
+			display: none;
+		}
+	}
+}
+.root61 {
+	.gb-nav{
+		width:1210px;
+		li a{padding:0 25px;}
+	} 
+}
