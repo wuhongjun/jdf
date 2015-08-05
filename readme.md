@@ -19,7 +19,7 @@ by putaoshu
 	|
 	├──jdf_demo  #jdf工具示例项目demo
 	├──jdf_homepage  #jdf网站前台              
-	├──jdf_websidte  #jdf网站后台 by@少星 维护    
+	├──jdf_websidte  #jdf网站后台 by@ 维护    
 	|                        
 	|                  
 
